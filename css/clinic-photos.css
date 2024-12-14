@@ -1,0 +1,33 @@
+#clinic-photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.clinic-photo-item {
+    position: relative;
+    width: 100px;
+}
+
+.clinic-photo-item img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clinic-photo-item .remove-clinic-photo {
+    display: block;
+    margin-top: 5px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.clinic-photo-item .remove-clinic-photo:hover {
+    background-color: #d32f2f;
+}

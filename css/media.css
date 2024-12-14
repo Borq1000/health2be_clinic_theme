@@ -1,0 +1,63 @@
+@media only screen and (max-width :415px) {
+    .logo-box {
+        margin: auto 0;
+        text-align: center;
+        
+       
+    }
+    
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link::after {
+        background: none !important;
+    }
+    
+    .tf-btn {
+        display: inline-block !important;
+        width: auto !important;
+        min-width: 180px;
+        max-width: 280px;
+       
+    }
+    
+    .ask-question-btn {
+       
+    }
+    
+   
+    
+    .header-account {
+        margin-right: 0px;
+        display: block;
+        text-align: center;
+    }
+    
+    .call-doctor-btn {
+        margin-bottom: 20px;
+    }
+    
+    .header-phone-block {
+        text-align: center;
+    }
+    
+    .logo-img {
+        width: 300px !important;
+        height: 90px;
+    }
+    
+    .flat-slider {
+    height: auto;
+}
+
+.home-banner-title {
+    line-height: 1.2em;
+}
+
+.search-form-home {
+    text-align: center;
+}
+
+.btn-banner-search {
+    
+    width: 100% !important;
+    margin-left: 17px;
+}
+}

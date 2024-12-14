@@ -1,0 +1,32 @@
+.doctor-field-group {
+  margin-bottom: 15px;
+}
+
+.doctor-field-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#doctor-photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.doctor-photo-item {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.doctor-photo-item img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.remove-photo {
+  color: #dc3545;
+}

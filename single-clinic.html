@@ -1,0 +1,59 @@
+<?php get_header(); ?>
+
+<main>
+    <div class="container">
+        <h1><?php the_title(); ?></h1>
+        <div class="clinic-details">
+            <p><strong>Адрес:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'address', true)); ?></p>
+            <p><strong>Телефон:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'phone', true)); ?></p>
+            <p><strong>E-mail:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'email', true)); ?></p>
+            <p><strong>Специализации:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'specializations', true)); ?></p>
+        </div>
+        
+        <!-- Описание клиники -->
+    <div class="clinic-description">
+        <?php 
+        while (have_posts()) : the_post(); 
+            the_content(); // Вывод описания из редактора WordPress
+        endwhile; 
+        ?>
+    </div>
+        
+        <ul>
+        <?php
+        $facebook = get_post_meta(get_the_ID(), 'facebook', true);
+        $instagram = get_post_meta(get_the_ID(), 'instagram', true);
+        $twitter = get_post_meta(get_the_ID(), 'twitter', true);
+
+        if ($facebook) {
+            echo '<li><a href="' . esc_url($facebook) . '" target="_blank">Facebook</a></li>';
+        }
+
+        if ($instagram) {
+            echo '<li><a href="' . esc_url($instagram) . '" target="_blank">Instagram</a></li>';
+        }
+
+        if ($twitter) {
+            echo '<li><a href="' . esc_url($twitter) . '" target="_blank">Twitter</a></li>';
+        }
+        ?>
+
+        <?php
+        $photos = get_post_meta(get_the_ID(), 'photos', true);
+        if (!empty($photos)) {
+            $photos_array = explode(',', $photos);
+            echo '<div class="clinic-photos">';
+            echo '<h2>Фотографии клиники</h2>';
+            foreach ($photos_array as $photo_id) {
+                $photo_url = wp_get_attachment_url($photo_id);
+                if ($photo_url) {
+                    echo '<img src="' . esc_url($photo_url) . '" style="max-width:300px; margin:10px;">';
+                }
+            }
+            echo '</div>';
+        }
+        ?>
+    </div>
+</main>
+
+<?php get_footer(); ?>
