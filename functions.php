@@ -541,8 +541,14 @@ function enqueue_doctor_styles() {
         wp_enqueue_style('doctor-styles', get_template_directory_uri() . '/css/doctor-styles.css', array(), '1.0.0');
     }
 }
+
 add_action('wp_enqueue_scripts', 'enqueue_doctor_styles');
 
+// Добавляем поддержку шорткодов в виджетах
+add_filter('widget_text', 'do_shortcode');
+
+// Добавляем поддержку шорткодов в отзывах
+add_filter('wpcr3_content', 'do_shortcode');
 
 // Обработка формы подписки
 function handle_subscription() {

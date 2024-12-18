@@ -282,7 +282,7 @@
 }
 
 .breadcumb-menu a:hover {
-    color: #00b5e8;
+    color: #7acacd;
 }
 
 /* Team Details */
@@ -314,7 +314,7 @@
 }
 
 .team-details-desig {
-    color: #00b5e8;
+    color: #7acacd;
     display: block;
     margin-bottom: 25px;
     font-size: 18px;
@@ -338,7 +338,7 @@
     flex: 0 0 45px;
     width: 45px;
     height: 45px;
-    background-color: #00b5e8;
+    background-color: #7acacd;
     color: var(--white-color);
     border-radius: 50%;
     display: flex;
@@ -383,7 +383,7 @@
     width: 40px;
     height: 40px;
     background-color: var(--smoke-color);
-    color: #00b5e8;
+    color: #7acacd;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -393,7 +393,7 @@
 }
 
 .team-social a:hover {
-    background-color: #00b5e8;
+    background-color: #7acacd;
     color: var(--white-color);
 }
 
@@ -419,12 +419,12 @@
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
-    color: #00b5e8;
+    color: #7acacd;
     background: transparent;
 }
 
 .nav-tabs .nav-link.active {
-    border-bottom: 2px solid #00b5e8;
+    border-bottom: 2px solid #7acacd;
 }
 
 /* Service Box */
@@ -439,12 +439,12 @@
 }
 
 .service-box:hover {
-    background-color: #00b5e8;
+    background-color: #7acacd;
     color: var(--white-color);
 }
 
 .service-box-icon {
-    color: #00b5e8;
+    color: #7acacd;
     font-size: 24px;
 }
 
@@ -463,7 +463,7 @@
 }
 
 .service-price-table th {
-    background-color: #00b5e8;
+    background-color: #7acacd;
     color: var(--white-color);
     padding: 15px 20px;
 }
@@ -474,7 +474,7 @@
 }
 
 .service-price-table .price {
-    color: #00b5e8;
+    color: #7acacd;
     font-weight: 600;
 }
 
@@ -518,9 +518,9 @@ textarea.form-control {
 
 .vs-btn {
     background-color: #ffffff;
-    color: #00b5e8;
+    color: #7acacd;
     padding: 15px 40px;
-    border: 2px solid #00b5e8;
+    border: 2px solid #7acacd;
     border-radius: 30px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -529,7 +529,7 @@ textarea.form-control {
 }
 
 .vs-btn:hover {
-    background-color: #00b5e8;
+    background-color: #7acacd;
     color: #ffffff;
 }
 
@@ -611,15 +611,15 @@ textarea.form-control {
 }
 
 .doctor-tabs .nav-link:hover {
-    color: #00b5e8;
+    color: #7acacd;
     background: transparent;
     border-color: transparent;
 }
 
 .doctor-tabs .nav-link.active {
-    color: #00b5e8;
+    color: #7acacd;
     background: #fff;
-    border-bottom: 2px solid #00b5e8;
+    border-bottom: 2px solid #7acacd;
 }
 
 .doctor-tab-content {

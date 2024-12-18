@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+
 <section class="flat-section flat-recommended flat-sidebar">
     <div class="container">
         <div class="box-title-listing">

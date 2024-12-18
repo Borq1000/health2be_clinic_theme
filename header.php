@@ -12,32 +12,24 @@
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/fonts/fonts.css">
    <!-- Icons -->
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/fonts/font-icons.css">
-   <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css">
+   <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/bootstrap.min.css?v=<?php echo time(); ?>">
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/swiper-bundle.min.css">
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/animate.css">
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/styles.css?v=<?php echo time(); ?>"/>
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/style.css?v=<?php echo time(); ?>">
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/clinic-detail.css?v=<?php echo time(); ?>">
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/media.css?v=<?php echo time();  ?>"/>
+   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/footer-mobile.css?v=<?php echo time();  ?>"/>
 <script src="https://kit.fontawesome.com/b0b0842921.js" crossorigin="anonymous"></script>
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico"/>
-    <link rel="apple-touch-icon-precomposed" href="i<?php bloginfo('template_url') ?>/mages/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_url') ?>/images/logo/favicon.png">
 <?php wp_head(); ?>
 </head>
 
 
 <body class="body">
     
-
-   <!-- preload -->
-<!--    <div class="preload preload-container">
-        <div class="preload-logo">
-            <div class="spinner"></div>
-            <span class="icon icon-villa-fill"></span>
-        </div>
-    </div>-->
-    <!-- /preload -->
 
 
     <div id="wrapper">
@@ -105,7 +97,7 @@
             );
         ?>
                            </div>
-         
+
 
        <!-------------------main menu end----------------------------------------------------->       
   

@@ -104,7 +104,7 @@
 .hero-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #00b5e8;
+    color: #7acacd;
     line-height: 1.2;
     margin-bottom: 20px;
 }
@@ -134,7 +134,7 @@
 
 .feature-item i {
     font-size: 24px;
-    color: #00b5e8;
+    color: #7acacd;
 }
 
 .feature-item span {
@@ -157,7 +157,7 @@
     padding: 0 30px;
     border-radius: 30px;
     font-size: 1.1rem;
-    background: #00b5e8;
+    background: #7acacd;
     border: none;
 }
 
@@ -179,13 +179,13 @@
 }
 
 .btn-primary {
-    background: #00b5e8;
-    border-color: #00b5e8;
+    background: #7acacd;
+    border-color: #7acacd;
 }
 
 .btn-outline-light {
-    border-color: #00b5e8;
-    color: #00b5e8;
+    border-color: #7acacd;
+    color: #7acacd;
 }
 
 @media (max-width: 1200px) {

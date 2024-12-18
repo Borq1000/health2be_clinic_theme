@@ -1,59 +1,147 @@
-<?php get_header(); ?>
-
-<main>
-    <div class="container">
-        <h1><?php the_title(); ?></h1>
-        <div class="clinic-details">
-            <p><strong>Адрес:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'address', true)); ?></p>
-            <p><strong>Телефон:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'phone', true)); ?></p>
-            <p><strong>E-mail:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'email', true)); ?></p>
-            <p><strong>Специализации:</strong> <?php echo esc_html(get_post_meta(get_the_ID(), 'specializations', true)); ?></p>
+<div class="row">
+    <div class="col-md-6">
+        <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/barviha_02.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">БАРВИХА</h3>
+            <div class="short-txt">Клинический санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/klinicheskij-sanatorij-barviha/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
         </div>
-        
-        <!-- Описание клиники -->
-    <div class="clinic-description">
-        <?php 
-        while (have_posts()) : the_post(); 
-            the_content(); // Вывод описания из редактора WordPress
-        endwhile; 
-        ?>
     </div>
-        
-        <ul>
-        <?php
-        $facebook = get_post_meta(get_the_ID(), 'facebook', true);
-        $instagram = get_post_meta(get_the_ID(), 'instagram', true);
-        $twitter = get_post_meta(get_the_ID(), 'twitter', true);
-
-        if ($facebook) {
-            echo '<li><a href="' . esc_url($facebook) . '" target="_blank">Facebook</a></li>';
-        }
-
-        if ($instagram) {
-            echo '<li><a href="' . esc_url($instagram) . '" target="_blank">Instagram</a></li>';
-        }
-
-        if ($twitter) {
-            echo '<li><a href="' . esc_url($twitter) . '" target="_blank">Twitter</a></li>';
-        }
-        ?>
-
-        <?php
-        $photos = get_post_meta(get_the_ID(), 'photos', true);
-        if (!empty($photos)) {
-            $photos_array = explode(',', $photos);
-            echo '<div class="clinic-photos">';
-            echo '<h2>Фотографии клиники</h2>';
-            foreach ($photos_array as $photo_id) {
-                $photo_url = wp_get_attachment_url($photo_id);
-                if ($photo_url) {
-                    echo '<img src="' . esc_url($photo_url) . '" style="max-width:300px; margin:10px;">';
-                }
-            }
-            echo '</div>';
-        }
-        ?>
     </div>
-</main>
-
-<?php get_footer(); ?>
+    
+    <div class="col-md-6">
+    <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/xsanatorij-podmoskove_01.png.pagespeed.ic.6DTypq1ds5.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">ПОДМОСКОВЬЕ</h3>
+            <div class="short-txt">Объединённый санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/obedinyonnyj-sanatorij-podmoskove/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-md-6">
+    <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/xsanatorij-podmoskove_01.png.pagespeed.ic.6DTypq1ds5.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">ЗАГОРСКИЕ ДАЛИ</h3>
+            <div class="short-txt">Санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/fgbu-sanatorij-zagorskie-dali/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-md-6">
+    <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/sanatori-sochi.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">СОЧИ</h3>
+            <div class="short-txt">Объединенный санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/fgbu-obedinennyj-sanatorij-sochi/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+    <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/xsanatorij-zarya_02.jpg.pagespeed.ic.9wSKgL0Q52.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">ЗАРЯ</h3>
+            <div class="short-txt">Санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/sanatorij-zarya/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+    <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/xfgbu-sanatorij-dubovaya-roshcha.jpg.pagespeed.ic.5P_UtQXqk2.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">ДУБОВАЯ РОЩА</h3>
+            <div class="short-txt">Санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/fgbu-sanatorij-dubovaya-roshcha/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-md-6">
+     <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/xsanatorij-volzhskij-utyos-e1518791384731.png.pagespeed.ic.LRulCMzOh_.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">ВОЛЖСКИЙ УТЁС</h3>
+            <div class="short-txt">Санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/sanatorij-volzhskij-utyos/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+       <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/xsanatorij-imeni-vorovskogo_01.jpg.pagespeed.ic.nCl0EluKvd.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">имени ВОРОВСКОГО</h3>
+            <div class="short-txt">Санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/sanatorij-imeni-vorovskogo/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+    <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/sanatorij-pushkino_01-e1518796981338.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">ПУШКИНО</h3>
+            <div class="short-txt">Санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/sanatorij-pushkino/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+     <div class="sanatorium-item">
+        <div class="sanatorium-item-img-wrapper">
+            <img src="https://health2be.com/wp-content/uploads/2018/02/xsanatorij-zapolyare_01.jpg.pagespeed.ic.oHTUyq5WfX.jpg" class="img-fluid img-sanatorium" alt="">
+            <h3 class="">ЗАПОЛЯРЬЕ</h3>
+            <div class="short-txt">Санаторий</div>
+            
+            <div class="sanatorium-item-btn-wrapper">
+                <a href="/sanatorii/sanatorij-zapolyare/" class="sanatorium-item-class" title="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+</div>

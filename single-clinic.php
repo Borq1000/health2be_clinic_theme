@@ -814,7 +814,7 @@ var mainSwiper = new Swiper('.sw-single', {
 .profile-link {
     display: inline-block;
     padding: 8px 24px;
-    background: #00b5e8;
+    background: #7acacd;
     color: #fff;
     border-radius: 6px;
     text-decoration: none;

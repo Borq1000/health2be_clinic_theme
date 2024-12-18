@@ -11,7 +11,9 @@ get_header();  ?>
 
 
 
+
  <?php require_once 'includes/faq-home.php';  ?>  
+
 
 
  <?php require_once 'includes/contact-block.php';  ?>  

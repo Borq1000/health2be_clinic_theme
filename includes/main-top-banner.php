@@ -144,7 +144,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.feature-support { border-left: 4px solid #00b5e8; }
+.feature-support { border-left: 4px solid #7acacd; }
 .feature-global { border-left: 4px solid #2ecc71; }
 .feature-doctor { border-left: 4px solid #e74c3c; }
 
@@ -185,7 +185,7 @@
 
 .feature-support .feature-icon { 
     background: rgba(0, 181, 232, 0.1);
-    color: #00b5e8;
+    color: #7acacd;
 }
 
 .feature-global .feature-icon {
@@ -216,8 +216,8 @@
 }
 
 .btn-primary {
-    background: #00b5e8;
-    border-color: #00b5e8;
+    background: #7acacd;
+    border-color: #7acacd;
     color: #fff;
 }
 
@@ -234,7 +234,7 @@
 
 .btn-outline-light:hover {
     background: #fff;
-    color: #00b5e8;
+    color: #7acacd;
     transform: translateY(-2px);
 }
 
