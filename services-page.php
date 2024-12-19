@@ -40,4 +40,6 @@ get_header(); ?>
 
 <?php require_once 'includes/uslugi/call-doctor/how-we-help.php';   ?>
 
+<?php require_once 'includes/uslugi/call-doctor/faq.php';   ?>
+
 <?php get_footer(); ?>

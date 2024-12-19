@@ -363,3 +363,60 @@
         margin-bottom: 1.5rem;
     }
 }
+
+/* FAQ Section Responsive */
+@media (max-width: 1200px) {
+    .vc_row h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .vc_row h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .vc_toggle_title {
+        padding: 1.2rem;
+    }
+    
+    .vc_toggle_title h4 {
+        font-size: 1rem;
+    }
+    
+    .vc_toggle_content {
+        padding: 0 1.2rem 1.2rem;
+    }
+    
+    .vc_toggle_content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .vc_row h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .vc_toggle {
+        margin-bottom: 0.8rem;
+    }
+    
+    .vc_toggle_title {
+        padding: 1rem;
+    }
+    
+    .vc_toggle_title h4 {
+        font-size: 0.95rem;
+    }
+    
+    .vc_toggle_content {
+        padding: 0 1rem 1rem;
+    }
+    
+    .vc_toggle_content p {
+        font-size: 0.9rem;
+    }
+}
