@@ -3874,6 +3874,7 @@ Version: 1.0
 .call-action .btn {
   padding: 1rem 2rem;
   font-weight: 600;
+  border-radius: 4px;
   transition: all 0.3s ease;
 }
 
@@ -3948,4 +3949,52 @@ Version: 1.0
 
 .btn i {
   font-size: 1.1rem;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator {
+  display: none;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator:after {
+  display: none;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item-has-children:hover>a.mega-menu-link>span.mega-indicator:after {
+  display: none;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator {
+  display: none;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator:after {
+  display: none;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children:hover>a.mega-menu-link>span.mega-indicator:after {
+  display: none;
+}
+
+.mega-indicator {
+  display: none !important;
+}
+
+.mega-indicator:after {
+  display: none !important;
+  content: none !important;
+}
+
+.btn-link {
+  color: #7acacd;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  border: 1px solid #7acacd;
+}
+
+.btn-link:hover {
+  background-color: #7acacd;
+  color: #fff;
+  text-decoration: none;
 }
