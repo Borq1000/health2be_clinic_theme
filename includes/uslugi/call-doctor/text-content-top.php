@@ -1,7 +1,7 @@
 <section class="text-content">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <div class="text-content-item">
                 <h2>Вызов врача на дом | Платная скорая помощь</h2>
                 <ul>
@@ -19,7 +19,7 @@
 
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <div class="text-content-img-wrapper">
                     <img src="/wp-content/uploads/2024/12/vyizov-vracha-na-dom.jpg" alt="Вызов врача на дом" class="img-fluid">
                 </div>

@@ -3524,7 +3524,7 @@ Version: 1.0
 /* Text Content Section Styles */
 .text-content {
   padding: 60px 0;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .text-content-item {
@@ -3603,6 +3603,12 @@ Version: 1.0
   transition: transform 0.5s ease;
 }
 
+.text-content .col-lg-7,
+.text-content .col-lg-5,
+.text-content .col-lg-6 {
+  margin-bottom: 30px;
+}
+
 .text-content-img-wrapper:hover img {
   transform: scale(1.05);
 }
@@ -3619,6 +3625,13 @@ Version: 1.0
   color: #fff;
   margin: 0;
   font-size: 24px;
+}
+
+.text-content-top img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* How We Help Section Styles */
@@ -3650,16 +3663,17 @@ Version: 1.0
   width: 80px;
   height: 80px;
   margin: 0 auto 1.5rem;
-  background: #7acacd;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(122, 202, 205, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .help-icon i {
   font-size: 2rem;
-  color: #fff;
+  color: #7acacd;
 }
 
 .help-step {
@@ -3706,110 +3720,78 @@ Version: 1.0
 }
 
 .condition-card {
-  padding: 1rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  border: 1px solid rgba(122, 202, 205, 0.2);
   height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.condition-card:hover {
-  transform: translateY(-5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .condition-icon {
-  width: 90px;
-  height: 90px;
-  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(122, 202, 205, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .condition-icon img {
-  width: 100%;
-  height: 100%;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
 .condition-title {
+  color: #333;
   font-size: 0.9rem;
-  color: #333;
+  font-weight: 500;
   margin: 0;
-  line-height: 1.3;
-}
-
-@media (max-width: 768px) {
-  .condition-icon {
-    width: 80px;
-    height: 80px;
-  }
-
-  .condition-title {
-    font-size: 0.8rem;
-  }
-}
-
-/* Custom 7-column grid */
-.col-custom-7 {
-  flex: 0 0 auto;
-  width: calc(100% / 7);
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
-}
-
-@media (max-width: 1200px) {
-  .col-custom-7 {
-    width: 25%;
-  }
-}
-
-@media (max-width: 768px) {
-  .col-custom-7 {
-    width: 33.333%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-custom-7 {
-    width: 50%;
-  }
-}
-
-/* When To Call Section Styles */
-.when-to-call {
-  background-color: #f8f9fa;
-  padding: 60px 0;
-}
-
-.when-to-call .section-title {
-  color: #333;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.condition-card {
-  padding: 1rem;
-  height: 100%;
-  transition: transform 0.3s ease;
+  transition: color 0.3s ease;
+  line-height: 1.2;
+  max-width: 90%;
 }
 
 .condition-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(122, 202, 205, 0.1);
+  border-color: rgba(122, 202, 205, 0.4);
 }
 
-.condition-icon {
-  width: 90px;
-  height: 90px;
-  margin: 0 auto;
+.condition-card:hover .condition-icon {
+  background: rgba(122, 202, 205, 0.2);
+  transform: scale(1.05);
 }
 
-.condition-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.condition-card:hover .condition-title {
+  color: #7acacd;
 }
 
-.condition-title {
-  font-size: 0.9rem;
-  color: #333;
-  margin: 0;
-  line-height: 1.3;
+.section-title {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #7acacd 0%, rgba(122, 202, 205, 0.3) 100%);
+  border-radius: 3px;
 }
 
 /* Header Styles */
@@ -3852,7 +3834,7 @@ Version: 1.0
 
 /* Call to Action Section */
 .call-action {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;

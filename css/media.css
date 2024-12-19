@@ -224,6 +224,21 @@
     }
 }
 
+/* Text Content Top Image Responsive */
+@media (max-width: 768px) {
+    .text-content-top img {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-content-top img {
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+}
+
 /* Responsive styles for call-doctor.php */
 @media (max-width: 1200px) {
     .page-title {
@@ -544,5 +559,97 @@
     .hero-buttons .btn {
         padding: 0.7rem 1.2rem;
         font-size: 0.9rem;
+    }
+}
+
+/* Custom 7-column grid */
+.col-custom-7 {
+    flex: 0 0 auto;
+    width: calc(100% / 7);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+@media (max-width: 1200px) {
+    .col-custom-7 {
+        width: 25%;
+    }
+
+    .condition-card {
+        padding: 1.2rem;
+    }
+
+    .condition-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .condition-icon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .condition-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-custom-7 {
+        width: 33.333%;
+    }
+
+    .condition-card {
+        padding: 1rem;
+    }
+
+    .condition-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .condition-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-custom-7 {
+        width: 50%;
+    }
+
+    .condition-card {
+        padding: 0.8rem;
+        border-width: 1px;
+    }
+
+    .condition-card::before {
+        height: 2px;
+    }
+
+    .condition-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.8rem;
+    }
+
+    .condition-title {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title::after {
+        width: 40px;
+        height: 2px;
     }
 }

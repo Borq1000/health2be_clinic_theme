@@ -5,7 +5,7 @@
             <div class="col-custom-7">
                 <div class="condition-card text-center">
                     <div class="condition-icon mb-3">
-                        <img src="https://health2be.com/wp-content/uploads/xvv-headache.png.pagespeed.ic.2isJ9b45RH.png" alt="Головные боли" class="img-fluid">
+                        <img src="/wp-content/uploads/2024/12/xvv-headache.png.pagespeed.ic_.2isJ9b45RH.png" alt="Головные боли" class="img-fluid">
                     </div>
                     <h5 class="condition-title">Головные боли</h5>
                 </div>
@@ -13,7 +13,7 @@
             <div class="col-custom-7">
                 <div class="condition-card text-center">
                     <div class="condition-icon mb-3">
-                        <img src="https://health2be.com/wp-content/uploads/vv-heart.png" alt="Проблемы с сердцем" class="img-fluid">
+                        <img src="/wp-content/uploads/2024/12/vv-heart.png" alt="Проблемы с сердцем" class="img-fluid">
                     </div>
                     <h5 class="condition-title">Проблемы с сердцем</h5>
                 </div>
@@ -21,7 +21,7 @@
             <div class="col-custom-7">
                 <div class="condition-card text-center">
                     <div class="condition-icon mb-3">
-                        <img src="https://health2be.com/wp-content/uploads/vv-stomatch.png" alt="Дискомфорт в животе" class="img-fluid">
+                        <img src="/wp-content/uploads/2024/12/vv-stomatch.png" alt="Дискомфорт в животе" class="img-fluid">
                     </div>
                     <h5 class="condition-title">Дискомфорт в животе</h5>
                 </div>
@@ -29,7 +29,7 @@
             <div class="col-custom-7">
                 <div class="condition-card text-center">
                     <div class="condition-icon mb-3">
-                        <img src="https://health2be.com/wp-content/uploads/xvv-flue.png.pagespeed.ic.Jb-5086wpG.png" alt="Простуда" class="img-fluid">
+                        <img src="/wp-content/uploads/2024/12/xvv-flue.png.pagespeed.ic_.Jb-5086wpG.png" alt="Простуда" class="img-fluid">
                     </div>
                     <h5 class="condition-title">Простуда</h5>
                 </div>
@@ -37,7 +37,7 @@
             <div class="col-custom-7">
                 <div class="condition-card text-center">
                     <div class="condition-icon mb-3">
-                        <img src="https://health2be.com/wp-content/uploads/xvv-allergy.png.pagespeed.ic.BOj-Y0_4Fd.png" alt="Аллергия" class="img-fluid">
+                        <img src="/wp-content/uploads/2024/12/xvv-allergy.png.pagespeed.ic_.BOj-Y0_4Fd.png" alt="Аллергия" class="img-fluid">
                     </div>
                     <h5 class="condition-title">Аллергия</h5>
                 </div>
@@ -45,7 +45,7 @@
             <div class="col-custom-7">
                 <div class="condition-card text-center">
                     <div class="condition-icon mb-3">
-                        <img src="https://health2be.com/wp-content/uploads/vv-other.png" alt="Другие проблемы со здоровьем" class="img-fluid">
+                        <img src="/wp-content/uploads/2024/12/vv-other.png" alt="Другие проблемы со здоровьем" class="img-fluid">
                     </div>
                     <h5 class="condition-title">Другие проблемы со здоровьем</h5>
                 </div>
@@ -53,7 +53,7 @@
             <div class="col-custom-7">
                 <div class="condition-card text-center">
                     <div class="condition-icon mb-3">
-                        <img src="https://health2be.com/wp-content/uploads/xvv-emergency.png.pagespeed.ic.c5I4AwJ6a2.png" alt="Экстренные случаи" class="img-fluid">
+                        <img src="/wp-content/uploads/2024/12/xvv-emergency.png.pagespeed.ic_.c5I4AwJ6a2.png" alt="Экстренные случаи" class="img-fluid">
                     </div>
                     <h5 class="condition-title">Экстренные случаи</h5>
                 </div>
