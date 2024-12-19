@@ -176,3 +176,190 @@
         height: auto !important;
     }
 }
+
+/* Text Content Section Responsive Styles */
+@media (max-width: 991px) {
+    .text-content {
+        padding: 40px 0;
+    }
+
+    .text-content-item {
+        margin-bottom: 30px;
+    }
+
+    .text-content-item h2 {
+        font-size: 24px;
+    }
+
+    .text-content-item h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-content {
+        padding: 30px 0;
+    }
+
+    .text-content-item {
+        padding: 20px;
+    }
+
+    .text-content-item h2 {
+        font-size: 22px;
+    }
+
+    .text-content-item h3 {
+        font-size: 18px;
+    }
+
+    .text-content-item ul li {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .text-content-img-wrapper h2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+}
+
+/* Responsive styles for call-doctor.php */
+@media (max-width: 1200px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .service-icon {
+        font-size: 1.75rem;
+    }
+
+    .service-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .service-card {
+        margin-bottom: 1rem;
+    }
+
+    .service-icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* Call Doctor Page Header Responsive */
+@media (max-width: 1200px) {
+    .page-header.vertical-align-table {
+        padding: 60px 0;
+    }
+
+    .page-header .page-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header.vertical-align-table {
+        padding: 40px 0;
+    }
+
+    .page-header .page-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .bread-crumb li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header.vertical-align-table {
+        padding: 30px 0;
+    }
+
+    .page-header .page-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .bread-crumb {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bread-crumb li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Banner responsive styles */
+@media (max-width: 1200px) {
+    .banner-section {
+        height: 450px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-section {
+        height: 400px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .banner-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-section {
+        height: 350px;
+    }
+
+    .banner-title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
