@@ -42,4 +42,6 @@ get_header(); ?>
 
 <?php require_once 'includes/uslugi/call-doctor/faq.php';   ?>
 
+<?php require_once 'includes/call-action.php';   ?>
+
 <?php get_footer(); ?>

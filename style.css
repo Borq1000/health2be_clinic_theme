@@ -3773,3 +3773,121 @@ Version: 1.0
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
+/* Call to Action Section */
+.call-action {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.call-action::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 0%, rgba(122, 202, 205, 0.1) 100%);
+  z-index: 1;
+}
+
+.call-action-content {
+  position: relative;
+  z-index: 2;
+}
+
+.call-action h2 {
+  color: #333;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.call-action .lead {
+  color: #666;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.call-action .btn {
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.call-action .btn-primary {
+  background-color: #7acacd;
+  border-color: #7acacd;
+}
+
+.call-action .btn-primary:hover {
+  background-color: #68b8bb;
+  border-color: #68b8bb;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(122, 202, 205, 0.3);
+}
+
+.call-action .btn-outline-primary {
+  color: #7acacd;
+  border-color: #7acacd;
+}
+
+.call-action .btn-outline-primary:hover {
+  background-color: #7acacd;
+  border-color: #7acacd;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(122, 202, 205, 0.3);
+}
+
+.call-action-image {
+  position: relative;
+  z-index: 2;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.call-back-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #ffb300;
+  border-color: #ffb300;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn i {
+  font-size: 1.1rem;
+}
