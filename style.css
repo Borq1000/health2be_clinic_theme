@@ -3339,9 +3339,85 @@ Version: 1.0
 
 .hero-banner {
   position: relative;
+
+  overflow: hidden;
+}
+
+
+
+.hero-image {
+  position: relative;
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 77, 111, 0.9) 0%, rgba(0, 77, 111, 0.7) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 0;
+}
+
+.hero-banner.compact .hero-content {
+  padding: 3rem 0;
+}
+
+.price-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  backdrop-filter: blur(4px);
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  color: #7acacd;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.hero-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+  background-color: #7acacd;
+  border-color: #7acacd;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #68b8bb;
+  border-color: #68b8bb;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(122, 202, 205, 0.3);
+}
+
+.hero-buttons .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.hero-banner {
+  position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 600px;
+  height: 400px;
+
   overflow: hidden;
 }
 
@@ -3350,7 +3426,7 @@ Version: 1.0
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+
   background: url("https://health2be.com/wp-content/uploads/xcall-doctor.jpg.pagespeed.ic.nYQaohu-B3.jpg") no-repeat center center;
   background-size: cover;
   z-index: 1;
@@ -3361,7 +3437,7 @@ Version: 1.0
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
