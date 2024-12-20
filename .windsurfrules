@@ -10,4 +10,5 @@
 10. When create icons, use fontawesome.
 11. When I give you html code to modify, always keep the same structure.
 12. Don short the original text content.
-12. When edit big large html blocks split changes into smaller blocks to avoid timeout error.
+13. When edit big large html blocks split changes into smaller blocks to avoid timeout error.
+14. When you write CSS styles, make sure they don't overwrite already defined styles for other HTML elements.
