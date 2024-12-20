@@ -463,70 +463,157 @@ Version: 1.0
 }
 
 .btn-primary {
-  background: #7acacd;
-  border: none;
+  background-color: #7acacd;
+  color: #fff;
   padding: 0.75rem 2rem;
   border-radius: 8px;
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  background: #0099cc;
+  background-color: #0099cc;
 }
 
 /* Doctors Carousel Styles */
 .doctors-section {
-  padding: 80px 0;
-  background: #fff;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.doctors-section .section-title {
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.doctors-section .section-subtitle {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: normal;
+}
+
+.section-title {
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.doctors-carousel {
+  display: flex;
+  transition: transform 0.3s ease;
+  margin: 0 -10px;
 }
 
 .doctor-card {
+  flex: 0 0 calc(25% - 20px);
+  margin: 0 10px;
   background: #fff;
-  border-radius: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.doctor-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .doctor-image {
-  position: relative;
-  width: 100%;
   height: 300px;
   overflow: hidden;
+  position: relative;
 }
 
 .doctor-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
 }
 
 .doctor-info {
-  padding: 1.5rem;
+  padding: 15px;
   text-align: center;
 }
 
-.doctor-name {
-  font-size: 1.2rem;
-  font-weight: 600;
+.doctor-info h4 {
   color: #333;
-  margin-bottom: 0.5rem;
+  font-size: 16px;
+  margin: 0 0 5px;
 }
 
-.doctor-specialty {
+.doctor-info h5 {
   color: #7acacd;
-  font-size: 0.9rem;
-  margin-bottom: 0.25rem;
+  font-size: 14px;
+  margin: 0 0 5px;
 }
 
-.doctor-degree {
+.doctor-info p {
   color: #666;
-  font-size: 0.85rem;
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.doctor-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #7acacd;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.doctor-link:hover {
+  background: #5f9ea0;
+  color: #fff;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  background: #7acacd;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background: #5f9ea0;
+}
+
+.carousel-prev.disabled,
+.carousel-next.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* Swiper Pagination Styles */
@@ -830,6 +917,7 @@ Version: 1.0
 .header-buttons .btn {
   padding: 8px 20px;
   border-radius: 6px;
+  font-size: 14px;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -952,6 +1040,29 @@ Version: 1.0
 .spec-list i {
   color: #7acacd;
   font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  .specializations-section {
+    padding: 60px 0;
+  }
+
+  .spec-list a {
+    padding: 6px 10px;
+  }
+
+  .spec-list span {
+    font-size: 14px;
+  }
+
+  .letter-circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .letter-circle span {
+    font-size: 16px;
+  }
 }
 
 /* Professional Help Section */
@@ -3354,6 +3465,7 @@ Version: 1.0
   right: 0;
   bottom: 0;
   background: linear-gradient(45deg, rgba(0, 77, 111, 0.9) 0%, rgba(0, 77, 111, 0.7) 100%);
+  z-index: 1;
 }
 
 .hero-content {
@@ -3379,6 +3491,7 @@ Version: 1.0
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
 .hero-buttons .btn-primary {
@@ -3449,6 +3562,7 @@ Version: 1.0
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
 .hero-buttons .btn-primary {
@@ -4349,6 +4463,10 @@ Version: 1.0
     display: none;
 }
 
+.vc_toggle_active .vc_toggle_icon::after {
+    transform: rotate(90deg);
+}
+
 .vc_toggle_content {
     padding: 0 20px 15px;
     margin: 0;
@@ -4551,4 +4669,73 @@ Version: 1.0
   margin: 0;
   position: relative;
   z-index: 1;
+}
+
+/* Стили для информационной секции */
+.info-section {
+  background: linear-gradient(135deg, rgba(122, 202, 205, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+  position: relative;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(122, 202, 205, 0.1);
+  overflow: hidden;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(122, 202, 205, 0.2);
+}
+
+.info-card-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.info-icon {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.info-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.info-card:hover .info-icon {
+  transform: scale(1.1);
+}
+
+.info-title {
+  color: #424242;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.info-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7acacd, transparent);
+}
+
+.info-text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
 }

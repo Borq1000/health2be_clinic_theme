@@ -59,4 +59,52 @@ get_header(); ?>
     </div>
 </section>
 
+<!---info section---->
+<section class="info-section py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Личный консультант -->
+            <div class="col-lg-4">
+                <div class="info-card h-100">
+                    <div class="info-card-content">
+                        <div class="info-icon">
+                            <img src="https://health2be.com/wp-content/uploads/xvm-consult.png.pagespeed.ic.owf1_8wYP8.png" alt="Консультант" class="img-fluid">
+                        </div>
+                        <h3 class="info-title">Личный консультант</h3>
+                        <p class="info-text">Специалисты службы медицинского сопровождения Health2Be изучат и помогут Вам подготовить необходимые медицинские документы для дальнейшей аналитики.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Сеть врачей -->
+            <div class="col-lg-4">
+                <div class="info-card h-100">
+                    <div class="info-card-content">
+                        <div class="info-icon">
+                            <img src="https://health2be.com/wp-content/uploads/xvm-net.png.pagespeed.ic.vPuNBfhGoe.png" alt="Сеть врачей" class="img-fluid">
+                        </div>
+                        <h3 class="info-title">Сеть врачей</h3>
+                        <p class="info-text">Ваш случай будет рассмотрен и проанализирован ведущим специалистом в своей области. При необходимости будет проведен консилиум с участием нескольких врачей.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Экспертный совет -->
+            <div class="col-lg-4">
+                <div class="info-card h-100">
+                    <div class="info-card-content">
+                        <div class="info-icon">
+                            <img src="https://health2be.com/wp-content/uploads/xvm-sovet.png.pagespeed.ic.QEAeHwZh9H.png" alt="Экспертный совет" class="img-fluid">
+                        </div>
+                        <h3 class="info-title">Экспертный совет</h3>
+                        <p class="info-text">В консилиуме по Вашему случаю работают ведущие российские и зарубежные специалисты. Предоставление рекомендаций по дальнейшим действиям.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php require_once 'includes/uslugi/second-opinion/our-doctors-carousel.php'; ?>
+
 <?php get_footer(); ?>

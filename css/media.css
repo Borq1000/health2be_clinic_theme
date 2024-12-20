@@ -908,3 +908,133 @@
         font-size: 1.1rem;
     }
 }
+
+/* Медиа-запросы для информационной секции */
+@media (max-width: 991px) {
+    .info-card {
+        margin-bottom: 2rem;
+    }
+    
+    .info-card:last-child {
+        margin-bottom: 0;
+    }
+    
+    .info-title {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .info-icon {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .info-card-content {
+        padding: 1.5rem;
+    }
+    
+    .info-title {
+        font-size: 1.25rem;
+    }
+    
+    .info-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .info-section {
+        padding: 2rem 0;
+    }
+}
+
+/* Медиа-запросы для карусели врачей */
+@media (max-width: 1200px) {
+    .doctor-card {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 991px) {
+    .doctor-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+    
+    .doctor-image {
+        height: 250px;
+    }
+    
+    .doctors-section .section-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .doctor-card {
+        flex: 0 0 calc(100% - 20px);
+        position: relative;
+    }
+    
+    .doctor-image {
+        height: 400px;
+    }
+    
+    .doctors-section .section-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .doctors-section .section-subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+        width: 32px;
+        height: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(122, 202, 205, 0.9);
+        position: absolute;
+    }
+    
+    .carousel-prev {
+        left: 5px;
+    }
+    
+    .carousel-next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctor-image {
+        height: 350px;
+    }
+    
+    .doctor-info h4 {
+        font-size: 15px;
+    }
+    
+    .doctor-info h5 {
+        font-size: 13px;
+    }
+    
+    .doctor-info p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .doctor-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .doctor-image {
+        height: 400px;
+    }
+}
