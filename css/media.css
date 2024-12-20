@@ -1038,3 +1038,159 @@
         height: 400px;
     }
 }
+
+/* Specializations Section Media Queries */
+@media (max-width: 991px) {
+    .specializations-section .section-title {
+        font-size: 24px;
+    }
+    
+    .specialization-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .specializations-section .section-title {
+        font-size: 22px;
+    }
+    
+    .specialization-links a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .specializations-section {
+        padding: 40px 0;
+    }
+    
+    .specializations-section .section-title {
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .specialization-card {
+        margin-bottom: 15px;
+    }
+    
+    .specialization-links a {
+        padding: 5px 8px;
+    }
+}
+
+/* Thank Section Media Queries */
+@media (max-width: 991px) {
+    .thank-section {
+        padding: 80px 0;
+    }
+    
+    .thank-quote {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .thank-section {
+        padding: 60px 0;
+    }
+    
+    .thank-content {
+        padding: 30px;
+    }
+    
+    .thank-quote {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .thank-section {
+        padding: 50px 0;
+    }
+    
+    .thank-content {
+        padding: 20px;
+    }
+    
+    .thank-quote {
+        font-size: 18px;
+    }
+}
+
+/* Final Message Media Queries */
+@media (max-width: 991px) {
+    .message-wrapper {
+        padding: 30px;
+    }
+    
+    .service-big {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .message-wrapper {
+        padding: 25px;
+    }
+    
+    .service-big {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .message-wrapper {
+        padding: 20px;
+    }
+    
+    .service-big {
+        font-size: 18px;
+    }
+}
+
+/* Steps Section Media Queries */
+@media (max-width: 991px) {
+    .step-card {
+        padding: 25px 15px;
+        margin-bottom: 20px;
+    }
+    
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .step-content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .step-card {
+        padding: 20px 15px;
+    }
+    
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .step-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .steps-section {
+        padding: 40px 0;
+    }
+    
+    .step-card {
+        margin-bottom: 15px;
+    }
+}

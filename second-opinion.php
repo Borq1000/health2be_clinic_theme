@@ -107,4 +107,65 @@ get_header(); ?>
 
 <?php require_once 'includes/uslugi/second-opinion/our-doctors-carousel.php'; ?>
 
+<?php require_once 'includes/uslugi/second-opinion/specializations.php'; ?>
+
+<?php require_once 'includes/uslugi/second-opinion/thank-section.php'; ?>
+
+
+<section class="final-message py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="message-wrapper text-center">
+                    <p class="service-big">Самое важное – это Врачи, у которых лечимся мы сами, наши дети и родители. Поэтому, если Вы находитесь в сложной ситуации и не знаете, что делать, остались вопросы — звоните!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---steps section------>
+<section class="steps-section py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <p>Отправьте нам запрос на получение второго мнения</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <p>Мы поможем Вам собрать всю необходимую документацию</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <p>Мы составим список из специалистов, которые подойдут именно Вам</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <p>Вы выберете из этого списка и получите второе мнение специалиста.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php require_once 'includes/uslugi/second-opinion/faq.php'; ?>
+
+<?php require_once 'includes/call-action.php';   ?>
+
 <?php get_footer(); ?>
