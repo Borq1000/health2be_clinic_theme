@@ -1467,3 +1467,174 @@
         justify-content: center;
     }
 }
+
+/* Медиа-запросы для секции услуг */
+@media (max-width: 991px) {
+    .full-services-list {
+        margin-top: 1.5rem;
+    }
+
+    .service-item {
+        margin-bottom: 1rem;
+    }
+
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-circle i {
+        font-size: 1.25rem;
+    }
+
+    .icon-circle-sm {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-circle-sm i {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .full-services-list {
+        margin-top: 1rem;
+        padding: 1rem !important;
+    }
+
+    .service-item {
+        margin-bottom: 0.75rem;
+    }
+
+    .service-item span {
+        font-size: 0.9rem;
+    }
+
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-circle i {
+        font-size: 1rem;
+    }
+
+    .icon-circle-sm {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5rem !important;
+    }
+
+    .icon-circle-sm i {
+        font-size: 0.7rem;
+    }
+
+    .full-services-list .row {
+        margin: -0.5rem;
+    }
+
+    .full-services-list [class*="col-"] {
+        padding: 0.5rem;
+    }
+}
+
+/* Медиа-запросы для секции с диагнозами */
+@media (max-width: 991px) {
+    .diagnoses-section {
+        padding: 3rem 0;
+    }
+
+    .diagnosis-card {
+        padding: 1rem !important;
+    }
+
+    .diagnosis-title {
+        font-size: 0.9rem;
+    }
+
+    .diagnosis-list {
+        font-size: 0.8rem;
+    }
+
+    .diagnosis-icon img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .diagnoses-section {
+        padding: 2rem 0;
+    }
+
+    .diagnosis-card {
+        margin-bottom: 1rem;
+    }
+
+    .diagnosis-icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .diagnosis-list li {
+        margin-bottom: 0.35rem !important;
+    }
+}
+
+/* Медиа-запросы для адаптивности блока с диагнозами */
+@media (max-width: 1200px) {
+    .diagnosis-card {
+        padding: 1.5rem !important;
+    }
+    
+    .diagnosis-letter {
+        font-size: 1rem;
+    }
+    
+    .diagnosis-list li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .diagnoses-section {
+        padding: 3rem 0 !important;
+    }
+    
+    .diagnosis-card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .diagnosis-card {
+        padding: 1.25rem !important;
+    }
+    
+    .diagnosis-letter {
+        font-size: 0.95rem;
+    }
+    
+    .diagnosis-list li {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .diagnoses-section {
+        padding: 2rem 0 !important;
+    }
+    
+    .diagnosis-card {
+        padding: 1rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}

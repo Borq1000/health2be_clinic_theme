@@ -569,3 +569,58 @@ function handle_subscription() {
     }
 }
 add_action('init', 'handle_subscription');
+
+/**
+ * Добавляем шорткод [exec] для выполнения PHP кода
+ */
+function exec_php_code($atts, $content = null) {
+    // Проверяем, является ли пользователь администратором
+    if (!current_user_can('administrator')) {
+        return 'Access denied';
+    }
+
+    // Очищаем контент от лишних тегов и пробелов
+    $content = trim($content);
+    
+    // Убираем экранирование кавычек
+    $content = stripslashes($content);
+    
+    // Проверяем наличие опасных функций
+    $dangerous_functions = array(
+        'system', 'exec', 'passthru', 'shell_exec', 
+        'popen', 'proc_open', 'eval', 'assert'
+    );
+    
+    foreach ($dangerous_functions as $func) {
+        if (stripos($content, $func) !== false) {
+            return 'Dangerous function detected: ' . $func;
+        }
+    }
+
+    // Создаем временный буфер для вывода
+    ob_start();
+    
+    try {
+        // Выполняем PHP код
+        eval('?>' . $content);
+    } catch (Exception $e) {
+        return 'Error: ' . $e->getMessage();
+    }
+    
+    // Получаем содержимое буфера
+    $output = ob_get_clean();
+    
+    return $output;
+}
+add_shortcode('exec', 'exec_php_code');
+
+/**
+ * Отключаем автоформатирование для шорткода [exec]
+ */
+function disable_wpautop_for_exec($content) {
+    if (has_shortcode($content, 'exec')) {
+        remove_filter('the_content', 'wpautop');
+    }
+    return $content;
+}
+add_filter('the_content', 'disable_wpautop_for_exec', 9);

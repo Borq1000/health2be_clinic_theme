@@ -1,0 +1,1739 @@
+/* Hero Banner Styles */
+.hero-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner.compact {
+    height: 630px;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    padding: 60px 0;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.features-list p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.features-list i {
+    width: 24px;
+    text-align: center;
+    margin-right: 10px;
+    text-shadow: none;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #7acacd;
+    border-color: #7acacd;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #68b8bb;
+    border-color: #68b8bb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(122, 202, 205, 0.3);
+}
+
+/* Анимации */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__delay-1s {
+    animation-delay: 0.3s;
+}
+
+.animate__delay-2s {
+    animation-delay: 0.6s;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .features-list p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-banner.compact {
+        height: 500px;
+    }
+
+    .hero-content {
+        padding: 40px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-banner.compact {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .hero-content {
+        padding: 30px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .features-list p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons .btn-primary {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.hero-banner.compact {
+    height: 75vh;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0.4) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 0;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.hero-buttons .btn {
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #7acacd;
+    border-color: #7acacd;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #68b8bb;
+    border-color: #68b8bb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(122, 202, 205, 0.3);
+}
+
+.hero-buttons .btn-primary.popmake-5718 {
+    width: auto;
+}
+
+.hero-buttons .btn-primary.popmake-5718 i {
+    margin-left: 10px;
+}
+
+/* Анимации */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.animate__delay-1s {
+    animation-delay: 0.3s;
+}
+
+.animate__delay-2s {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Медиа запросы */
+@media (max-width: 991px) {
+    .hero-banner {
+        height: 75vh;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-banner {
+        height: 100vh;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Стили для секции сервисов */
+.services-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    color: #6c757d;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.service-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.service-list li {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.full-services {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.full-services:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.full-services .fa-chevron-down {
+    transition: transform 0.3s ease;
+    color: #7acacd;
+}
+
+.full-services[aria-expanded="true"] .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Адаптивные стили */
+@media (max-width: 991px) {
+    .services-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem !important;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .service-card {
+        padding: 1.25rem !important;
+    }
+
+    .service-icon {
+        font-size: 1.75rem;
+        height: 40px;
+    }
+}
+
+/* Features Section Styles */
+.features-section {
+    background-color: #f8f9fa;
+}
+
+.feature-card {
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon img {
+    filter: brightness(0) saturate(100%) invert(67%) sepia(13%) saturate(1371%) hue-rotate(152deg) brightness(89%) contrast(84%);
+    opacity: 0.9;
+}
+
+.feature-title {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.feature-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Адаптивные стили для карточек */
+@media (max-width: 991px) {
+    .feature-card {
+        padding: 1.5rem !important;
+    }
+
+    .feature-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+    }
+
+    .feature-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .feature-card {
+        padding: 1.25rem !important;
+    }
+
+    .feature-icon img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Секция с шагами госпитализации */
+.hospitalization-steps {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.steps-title {
+    text-align: center;
+    color: #2d3436;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.steps-title:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #7acacd;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.step-item {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    padding: 35px 25px 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(122, 202, 205, 0.15);
+}
+
+.step-num {
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    background: #7acacd;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(122, 202, 205, 0.3);
+}
+
+.step-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.step-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(122, 202, 205, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.step-icon i {
+    font-size: 28px;
+    color: #7acacd;
+}
+
+.step-desc {
+    flex-grow: 1;
+}
+
+.step-desc p {
+    color: #636e72;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+.step-desc p:last-child {
+    margin-bottom: 0;
+}
+
+.step-phone {
+    color: #2d3436;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hospitalization-steps {
+        padding: 60px 0;
+    }
+
+    .steps-title {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .step-item {
+        padding: 30px 20px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hospitalization-steps {
+        padding: 40px 0;
+    }
+
+    .steps-title {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .step-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .step-icon i {
+        font-size: 24px;
+    }
+
+    .step-desc p {
+        font-size: 15px;
+    }
+
+    .step-phone {
+        font-size: 17px;
+    }
+}
+
+/* Секция с отзывами */
+.testimonials-section {
+    padding: 6rem 0;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.testimonial-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.testimonial-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0.4) 100%);
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    color: #fff;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInRight 1s ease-out;
+}
+
+.testimonial-quote {
+    font-size: 2rem;
+    color: #7acacd;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.author-name {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #7acacd;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Адаптивные стили для отзывов */
+@media (max-width: 991px) {
+    .testimonials-section {
+        padding: 4rem 0;
+    }
+
+    .testimonial-card {
+        margin: 0 1rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonials-section {
+        padding: 3rem 0;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+    }
+
+    .author-name {
+        font-size: 1.25rem;
+    }
+}
+
+/* FAQ секция */
+.faq-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.faq-section h2 {
+    color: #2d3436;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.faq-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #7acacd;
+}
+
+.faq-column {
+    margin-bottom: 30px;
+}
+
+/* Стили для аккордеона */
+.vc_toggle {
+    margin-bottom: 20px;
+    border: 1px solid rgba(122, 202, 205, 0.2);
+    border-radius: 10px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.vc_toggle:hover {
+    box-shadow: 0 5px 15px rgba(122, 202, 205, 0.1);
+}
+
+.vc_toggle_title {
+    padding: 20px 50px 20px 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.vc_toggle_title h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #2d3436;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.vc_toggle_icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #7acacd;
+    border-radius: 50%;
+}
+
+.vc_toggle_icon:before,
+.vc_toggle_icon:after {
+    content: '';
+    position: absolute;
+    background: #7acacd;
+}
+
+.vc_toggle_icon:before {
+    width: 2px;
+    height: 10px;
+    top: 3px;
+    left: 7px;
+}
+
+.vc_toggle_icon:after {
+    width: 10px;
+    height: 2px;
+    top: 7px;
+    left: 3px;
+}
+
+.vc_toggle.vc_toggle_active .vc_toggle_icon:before {
+    display: none;
+}
+
+.vc_toggle_content {
+    padding: 0 25px 20px;
+    margin: 0;
+    display: none;
+}
+
+.vc_toggle.vc_toggle_active .vc_toggle_content {
+    display: block;
+}
+
+.vc_toggle_content p {
+    color: #636e72;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.vc_toggle_content a {
+    color: #7acacd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.vc_toggle_content a:hover {
+    color: #2d3436;
+}
+
+/* Адаптивные стили для FAQ */
+@media (max-width: 991px) {
+    .faq-section {
+        padding: 60px 0;
+    }
+
+    .faq-section h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .vc_toggle_title h4 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-section {
+        padding: 40px 0;
+    }
+
+    .faq-section h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .vc_toggle_title {
+        padding: 15px 45px 15px 20px;
+    }
+
+    .vc_toggle_title h4 {
+        font-size: 16px;
+    }
+
+    .vc_toggle_content {
+        padding: 0 20px 15px;
+    }
+
+    .vc_toggle_content p {
+        font-size: 15px;
+    }
+}
+
+/* Стили для иконок в кружочках */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(122, 202, 205, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.icon-circle i {
+    font-size: 1.5rem;
+}
+
+.icon-circle-sm {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(122, 202, 205, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-circle-sm i {
+    font-size: 0.875rem;
+}
+
+/* Стили для выпадающего списка */
+.full-services-list {
+    margin-top: 2rem;
+}
+
+.service-item {
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateX(5px);
+}
+
+/* Стили для секции с диагнозами */
+.diagnoses-section {
+    background-color: #f8f9fa;
+}
+
+.diagnosis-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.diagnosis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.diagnosis-letter {
+    color: #7acacd;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-bottom: 2px solid rgba(122, 202, 205, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.diagnosis-list li a {
+    color: #555;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 0.35rem 0;
+}
+
+.diagnosis-list li a:hover {
+    color: #7acacd;
+    text-decoration: none;
+}
+
+.diagnosis-list li span {
+    display: block;
+    padding: 0.35rem 0;
+    color: #555;
+}
+
+.diagnosis-group:last-child {
+    margin-bottom: 0 !important;
+}
+
+.section-line {
+    width: 60px;
+    height: 3px;
+    background-color: #7acacd;
+    margin: 0 auto;
+}
+
+/* Стили для Max Mega Menu */
+.mega-sub-menu {
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    padding: 8px !important;
+}
+
+.mega-sub-menu>li.mega-menu-item {
+    padding: 0 !important;
+    margin: 2px 0 !important;
+}
+
+.mega-sub-menu>li.mega-menu-item>a.mega-menu-link {
+    padding: 8px 16px !important;
+    line-height: 1.4 !important;
+    font-size: 14px !important;
+    color: #333333 !important;
+    transition: all 0.3s ease !important;
+    border-radius: 8px !important;
+}
+
+.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:hover {
+    background: rgba(122, 202, 205, 0.2) !important;
+    color: #7acacd !important;
+}
+
+.mega-sub-menu>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link {
+    background: rgba(122, 202, 205, 0.08) !important;
+    color: #7acacd !important;
+    font-weight: 500 !important;
+}
+
+/* Mission Cards Styles */
+.mission-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.mission-image {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.mission-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mission-card:hover .mission-image img {
+    transform: scale(1.05);
+}
+
+.mission-content {
+    padding: 2rem;
+}
+
+.mission-title {
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.mission-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #7acacd;
+    border-radius: 2px;
+}
+
+.mission-text {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.accent-letter {
+    color: #7acacd;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+/* Info Box Styles */
+.info-box {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    background: #7acacd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.info-icon i {
+    color: white;
+    font-size: 1.75rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .mission-content {
+        padding: 1.5rem;
+    }
+
+    .mission-title {
+        font-size: 1.5rem;
+    }
+
+    .info-box {
+        padding: 1.5rem;
+    }
+
+    .info-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+    }
+
+    .info-icon i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .mission-image {
+        height: 300px;
+    }
+}
+
+/* Price and Availability Badges */
+.price-badge {
+
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(122, 202, 205, 0.3);
+    transition: all 0.3s ease;
+}
+
+.price-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(122, 202, 205, 0.4);
+}
+
+.availability-badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.availability-badge i {
+    color: #7acacd;
+}
+
+.availability-badge:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+    .price-badge,
+    .availability-badge {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Организация услуг стили */
+.org-service .service-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.org-service .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(122, 202, 205, 0.15);
+}
+
+.org-service .icon-circle {
+    width: 90px;
+    height: 90px;
+    background: rgba(122, 202, 205, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.org-service .icon-circle img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+.org-service .service-card:hover .icon-circle {
+    background: rgba(122, 202, 205, 0.2);
+    transform: scale(1.05);
+}
+
+.org-service .service-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.org-service .service-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #7acacd;
+    border-radius: 2px;
+}
+
+.org-service .service-description {
+    color: #666;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.org-service .service-details .btn-link {
+    color: #7acacd;
+    font-weight: 500;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    transition: color 0.3s ease;
+}
+
+.org-service .service-details .btn-link:hover,
+.org-service .service-details .btn-link:focus {
+    color: #333;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.org-service .service-details .btn-link i {
+    transition: transform 0.3s ease;
+}
+
+.org-service .service-details .btn-link[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.org-service .service-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.org-service .service-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.org-service .service-list li:before {
+    content: '•';
+    color: #7acacd;
+    position: absolute;
+    left: 0.5rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .org-service .service-card {
+        padding: 1.5rem;
+    }
+
+    .org-service .icon-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .org-service .icon-circle img {
+        width: 35px;
+    }
+
+    .org-service .service-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Стили для списка второго мнения */
+.second-opinion-list {
+    padding-left: 0.5rem;
+}
+
+
+.second-opinion-list li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #fff;
+    padding: 0.5rem 0;
+    transition: transform 0.3s ease;
+}
+
+.second-opinion-list li:hover {
+    transform: translateX(5px);
+}
+
+.second-opinion-list li i {
+    color: #7acacd;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.second-opinion-list li i.fa-check-circle {
+    position: relative;
+}
+
+.second-opinion-list li i.fa-check-circle:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(122, 202, 205, 0.1);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.second-opinion-list li:hover i.fa-check-circle:after {
+    transform: translate(-50%, -50%) scale(1.2);
+    background: rgba(122, 202, 205, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .second-opinion-list li {
+        font-size: 1rem;
+    }
+
+    .second-opinion-list li i {
+        font-size: 1.1rem;
+    }
+}
+
+/* Стили для FAQ секции с одной колонкой */
+.faq-single-column-section {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.faq-single-column-section .faq-column {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-single-column-section .vc_toggle {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(122, 202, 205, 0.2);
+    border-radius: 8px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.faq-single-column-section .vc_toggle:hover {
+    border-color: rgba(122, 202, 205, 0.5);
+    box-shadow: 0 5px 15px rgba(122, 202, 205, 0.1);
+}
+
+.faq-single-column-section .vc_toggle_title {
+    padding: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-single-column-section .vc_toggle_title h4 {
+    margin: 0;
+    padding-right: 30px;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.faq-single-column-section .vc_toggle_icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #7acacd;
+    border-radius: 50%;
+}
+
+.faq-single-column-section .vc_toggle_icon::before,
+.faq-single-column-section .vc_toggle_icon::after {
+    content: '';
+    position: absolute;
+    background: #7acacd;
+}
+
+.faq-single-column-section .vc_toggle_icon::before {
+    width: 2px;
+    height: 8px;
+    top: 2px;
+    left: 5px;
+}
+
+.faq-single-column-section .vc_toggle_icon::after {
+    width: 8px;
+    height: 2px;
+    top: 5px;
+    left: 2px;
+}
+
+.faq-single-column-section .vc_toggle.vc_toggle_active .vc_toggle_icon::before {
+    display: none;
+}
+
+.faq-single-column-section .vc_toggle_content {
+    padding: 0 1.5rem 1.5rem;
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.faq-single-column-section .vc_toggle_content p {
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .faq-single-column-section {
+        padding: 3rem 0;
+    }
+
+    .faq-single-column-section .vc_toggle_title h4 {
+        font-size: 1rem;
+    }
+
+    .faq-single-column-section .vc_toggle {
+        margin: 0 1rem 1rem;
+    }
+}
+
+/* Стили для заголовка FAQ секции */
+.faq-single-column-section .section-header {
+    margin-bottom: 3.5rem;
+}
+
+.faq-single-column-section .section-header h6 {
+    color: #7acacd;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.faq-single-column-section .section-header .title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.faq-single-column-section .title-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.faq-single-column-section .divider-line {
+    width: 40px;
+    height: 2px;
+    background-color: #7acacd;
+    transition: width 0.3s ease;
+}
+
+.faq-single-column-section .section-header:hover .divider-line {
+    width: 50px;
+}
+
+.faq-single-column-section .divider-icon {
+    color: #7acacd;
+    font-size: 12px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-single-column-section .section-header:hover .divider-icon {
+    transform: rotate(90deg);
+}
+
+/* Адаптивность для заголовка */
+@media (max-width: 768px) {
+    .faq-single-column-section .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .faq-single-column-section .section-header h6 {
+        font-size: 0.8rem;
+    }
+
+    .faq-single-column-section .section-header .title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .faq-single-column-section .divider-line {
+        width: 30px;
+    }
+
+    .faq-single-column-section .section-header:hover .divider-line {
+        width: 40px;
+    }
+}
+
+/* Стили для FAQ секции на главной */
+.faq-home {
+    background-color: #fff;
+}
+
+.faq-home .divider {
+    margin-bottom: 2rem;
+}
+
+.faq-home .divider .line {
+    width: 40px;
+    height: 2px;
+    background-color: #7acacd;
+    transition: width 0.3s ease;
+}
+
+.faq-home .divider i {
+    color: #7acacd;
+    font-size: 12px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.faq-home .divider:hover .line {
+    width: 50px;
+}
+
+.faq-home .divider:hover i {
+    transform: rotate(90deg);
+}
+
+.faq-home .accordion-item {
+    border: 1px solid rgba(122, 202, 205, 0.2);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.faq-home .accordion-button {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    background: #fff;
+    border: none;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+.faq-home .accordion-button:not(.collapsed) {
+    color: #7acacd;
+    background: #fff;
+    box-shadow: none;
+}
+
+.faq-home .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%237acacd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transition: transform 0.3s ease;
+}
+
+.faq-home .accordion-button:hover {
+    color: #7acacd;
+}
+
+.faq-home .accordion-body {
+    padding: 0 1.5rem 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.faq-home .accordion-body a {
+    color: #7acacd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.faq-home .accordion-body a:hover {
+    color: #333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .faq-home {
+        padding: 3rem 0;
+    }
+
+    .faq-home .accordion-button {
+        font-size: 1rem;
+        padding: 1.25rem;
+    }
+
+    .faq-home .accordion-body {
+        font-size: 0.95rem;
+        padding: 0 1.25rem 1.25rem;
+    }
+}
+
+/* Стили для хлебных крошек */
+.breadcrumbs-section {
+    padding: 1rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(122, 202, 205, 0.1);
+}
+
+.breadcrumbs-section .row {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs-section a {
+    color: #7acacd;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs-section a:hover {
+    color: #333;
+}
+
+.breadcrumbs-section .home {
+    position: relative;
+    padding-left: 0 !important;
+}
+
+.breadcrumbs-section .home::before {
+    content: '\f015' !important;
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900 !important;
+    margin-right: 0.5rem !important;
+    color: #7acacd !important;
+}
+
+.breadcrumbs-section > span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs-section .current-item {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Стиль для разделителя */
+.breadcrumbs-section span[property="itemListElement"] {
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.breadcrumbs-section span[property="itemListElement"]:first-child {
+    margin-left: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .breadcrumbs-section {
+        padding: 0.75rem 0;
+    }
+    
+    .breadcrumbs-section a,
+    .breadcrumbs-section > span {
+        font-size: 0.85rem;
+    }
+}

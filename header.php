@@ -20,7 +20,9 @@
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/clinic-detail.css?v=<?php echo time(); ?>">
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/media.css?v=<?php echo time();  ?>"/>
    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/footer-mobile.css?v=<?php echo time();  ?>"/>
-
+   
+   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/custom.css?v=<?php echo time();  ?>"/>
+   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/css/custom-new.css?v=<?php echo time();  ?>"/>
 
    <script src="https://kit.fontawesome.com/b0b0842921.js" crossorigin="anonymous"></script>
     <!-- Favicon and Touch Icons  -->

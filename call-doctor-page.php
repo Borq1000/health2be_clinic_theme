@@ -5,6 +5,21 @@ Template Name: Страница Вызов врача
 
 get_header(); ?>
 
+<style>
+    .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: url("<?php header_image(); ?>") no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+</style>
+
+<main class="main-content-services">
+
 <section class="hero-banner compact">
     <div class="hero-image">
         <div class="hero-overlay"></div>
@@ -12,23 +27,24 @@ get_header(); ?>
             <div class="row align-items-center">
                 <div class="col-lg-8">
                     <div class="hero-content">
-                        <h1 class="h2 text-white fw-bold mb-3 animate__animated animate__fadeInUp">
-                            Вызов врача на дом. Платная скорая помощь.
-                        </h1>
-                        <div class="d-flex align-items-center mb-4 animate__animated animate__fadeInUp animate__delay-1s">
-                            <span class="price-badge">от 8000 руб.</span>
-                            <span class="availability-badge ms-3">
-                                <i class="fas fa-clock me-1"></i>24/7
-                            </span>
-                        </div>
-                        <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
-                            <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#callDoctorModal">
-                                <i class="fas fa-phone-alt me-2"></i>Вызвать врача
-                            </button>
-                            <button class="btn btn-outline-light">
-                                <i class="fas fa-info-circle me-2"></i>Узнать больше
-                            </button>
-                        </div>
+                    <?php
+                    $subheader_title = get_post_meta(get_the_ID(), 'subheader_title', true);
+                    $subheader_aditional = get_post_meta(get_the_ID(), 'subheader_aditional', true);
+                    
+                    if ($subheader_title) {
+                       
+                        echo $subheader_title;
+                       
+                    }
+
+                    if ($subheader_aditional) {
+                        echo $subheader_aditional;
+                     }
+                     
+                    ?>
+
+
+                       
                     </div>
                 </div>
             </div>
@@ -37,19 +53,14 @@ get_header(); ?>
 </section>
 
 
-
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <?php the_content(); ?>
-                    <?php endwhile; ?>
-                    <?php endif; ?>
+                    <?php the_content(); ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
 
-
-<?php require_once 'includes/uslugi/call-doctor/advantages.php';   ?>
-
-<?php require_once 'includes/uslugi/call-doctor/how-we-help.php';   ?>
-
-<?php require_once 'includes/uslugi/call-doctor/faq.php';   ?>
 
 <?php require_once 'includes/call-action.php';   ?>
+
+</main>
 
 <?php get_footer(); ?>
