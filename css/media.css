@@ -1194,3 +1194,276 @@
         margin-bottom: 15px;
     }
 }
+
+/* Медиа-запросы для адаптивности блока с вопросами */
+@media (max-width: 768px) {
+    .text-block {
+        padding: 1.5rem;
+    }
+    
+    .text-block .lead {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    .question-block {
+        margin: 0 1rem;
+    }
+    
+    .question-block .h4 {
+        font-size: 1.25rem;
+    }
+    
+    .question-block .h5 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-block {
+        padding: 1rem;
+    }
+    
+    .text-block .lead {
+        font-size: 1rem;
+    }
+    
+    .question-block {
+        margin: 0 0.5rem;
+    }
+    
+    .question-block .h4 {
+        font-size: 1.15rem;
+    }
+    
+    .question-block .h5 {
+        font-size: 1rem;
+    }
+}
+
+/* Медиа-запросы для секции medical-support-order */
+@media (max-width: 991px) {
+    .medical-support-order h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .medical-support-order .expert-info {
+        padding: 1.25rem !important;
+    }
+    
+    .medical-support-order .expert-info p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .medical-support-order h2 {
+        font-size: 1.35rem;
+    }
+    
+    .medical-support-order .image-wrapper {
+        margin-bottom: 1.5rem;
+    }
+    
+    .medical-support-order .btn-primary {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .medical-support-order h2 {
+        font-size: 1.25rem;
+    }
+    
+    .medical-support-order .expert-info {
+        padding: 1rem !important;
+    }
+    
+    .medical-support-order .expert-info i {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Why Us Section Media Queries */
+@media (max-width: 991px) {
+    .why-us .section-title {
+        font-size: 2rem;
+    }
+    
+    .why-us .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-card .icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .feature-card .icon-wrapper i {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-us .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+    
+    .feature-card .feature-title {
+        font-size: 1.1rem;
+    }
+    
+    .feature-card .feature-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .why-us .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .why-us .section-title:after {
+        width: 60px;
+    }
+    
+    .feature-card {
+        padding: 1.25rem;
+    }
+    
+    .feature-card .icon-wrapper {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Cases Section Media Queries */
+@media (max-width: 991px) {
+    .case-item {
+        padding: 20px;
+    }
+
+    .case-icon {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .case-item h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cases-section {
+        padding: 40px 0;
+    }
+
+    .case-item {
+        padding: 15px;
+    }
+
+    .case-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+    .case-item h3 {
+        font-size: 18px;
+    }
+
+    .btn-toggle {
+        font-size: 14px;
+    }
+}
+
+/* Cases Section Media Queries */
+@media (max-width: 991px) {
+    .case-image {
+        height: 200px;
+    }
+    
+    .case-content {
+        padding: 1.25rem;
+    }
+    
+    .case-title {
+        font-size: 1.1rem;
+    }
+    
+    .case-text {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .case-image {
+        height: 180px;
+    }
+    
+    .case-details {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+/* Cases Section Media Queries */
+@media (max-width: 1200px) {
+    .case-item {
+        padding: 1.5rem;
+    }
+
+    .case-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .case-item .box-header {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .cases-section {
+        padding: 60px 0;
+    }
+
+    .case-body {
+        height: auto;
+    }
+
+    .case-text {
+        font-size: 0.9375rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .case-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .case-icon {
+        width: 80px;
+        height: 80px;
+        padding: 1rem;
+    }
+
+    .btn-toggle {
+        width: 100%;
+        justify-content: center;
+    }
+}

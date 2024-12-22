@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="text-center mt-5">
-            <a href="/spetsializatsii/" class="btn btn-primary specialization-btn">Все специализации</a>
+            <a href="/specializacii/" class="btn btn-primary specialization-btn">Все специализации</a>
         </div>
     </div>
 </div>

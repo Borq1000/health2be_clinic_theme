@@ -51,7 +51,7 @@ Version: 1.0
   text-align: center;
   height: 100%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -70,7 +70,6 @@ Version: 1.0
 }
 
 .stat-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -203,11 +202,10 @@ Version: 1.0
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   height: 100%;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .advantage-card:hover {
-  transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -220,12 +218,11 @@ Version: 1.0
   justify-content: center;
   background: rgba(122, 202, 205, 0.1);
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .advantage-card:hover .advantage-icon {
   background: rgba(122, 202, 205, 0.2);
-  transform: scale(1.1);
 }
 
 .advantage-icon img {
@@ -250,11 +247,11 @@ Version: 1.0
 
 /* Advantages Section Styles */
 .advantage-card {
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .advantage-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .advantage-icon {
@@ -283,11 +280,10 @@ Version: 1.0
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .vc_toggle:hover {
-  transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -948,12 +944,11 @@ Version: 1.0
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
   height: 100%;
 }
 
 .clinic-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
@@ -1110,11 +1105,11 @@ Version: 1.0
   text-align: center;
   height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .stat-box:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .stat-number {
@@ -1642,11 +1637,10 @@ Version: 1.0
   padding: 30px;
   height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .specialties-block:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -1656,12 +1650,11 @@ Version: 1.0
   padding: 20px;
   height: 100%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
   margin-bottom: 0;
 }
 
 .specialty-group:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -1954,12 +1947,11 @@ Version: 1.0
   background: #fff;
   border-radius: 12px;
   padding: 15px;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .box-tes-item:hover {
-  transform: translateY(-10px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -1975,7 +1967,7 @@ Version: 1.0
   height: 300px;
   object-fit: cover;
   border-radius: 12px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .box-tes-item:hover .avatar img {
@@ -2094,6 +2086,7 @@ Version: 1.0
   background-color: #fff;
   border-bottom: 1px solid #eee;
 }
+
 
 .header-property-detail {
   margin-bottom: 20px;
@@ -2247,11 +2240,10 @@ Version: 1.0
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .doctor-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -2472,11 +2464,10 @@ Version: 1.0
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .napravleniya-item:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -2541,12 +2532,11 @@ Version: 1.0
   padding: 20px;
   height: 100%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
   margin-bottom: 0;
 }
 
 .specialty-group:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -3280,7 +3270,7 @@ Version: 1.0
   border-radius: 1rem;
   overflow: hidden;
   background: #fff;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .sanatorium-item-img-wrapper:hover {
@@ -3626,11 +3616,11 @@ Version: 1.0
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .text-content-item:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .text-content-item h2 {
@@ -3745,12 +3735,12 @@ Version: 1.0
   height: 100%;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
 }
 
 .help-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .help-icon {
@@ -3762,7 +3752,7 @@ Version: 1.0
   justify-content: center;
   background: rgba(122, 202, 205, 0.1);
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .help-icon i {
@@ -3905,13 +3895,13 @@ Version: 1.0
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
   margin-bottom: 2rem;
   border: none;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .service-icon {
@@ -4100,12 +4090,14 @@ Version: 1.0
 
 .feature-card {
   background: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
   border-color: rgba(122, 202, 205, 0.2) !important;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(122, 202, 205, 0.1);
 }
 
@@ -4142,12 +4134,7 @@ Version: 1.0
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   position: relative;
-  transition: all 0.3s ease;
-}
-
-.step-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(122, 202, 205, 0.15);
+  transition: box-shadow 0.3s ease;
 }
 
 
@@ -4268,12 +4255,11 @@ Version: 1.0
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   padding: 25px;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
   height: 100%;
 }
 
 .example-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(122, 202, 205, 0.15);
 }
 
@@ -4354,7 +4340,6 @@ Version: 1.0
 }
 
 .example-card:hover {
-  transform: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
@@ -4407,7 +4392,11 @@ Version: 1.0
   border: 1px solid rgba(122, 202, 205, 0.2);
   border-radius: 10px;
   background: #fff;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+
+.vc_toggle:hover {
+  box-shadow: 0 5px 15px rgba(122, 202, 205, 0.1);
 }
 
 .vc_toggle_title {
@@ -4471,10 +4460,6 @@ Version: 1.0
 
 .vc_toggle_active .vc_toggle_content {
   display: block;
-}
-
-.vc_toggle:hover {
-  box-shadow: 0 5px 15px rgba(122, 202, 205, 0.1);
 }
 
 /* Стили для секции с призывом к действию */
@@ -4675,13 +4660,12 @@ Version: 1.0
 .info-card {
   background: #fff;
   border-radius: 15px;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
   box-shadow: 0 10px 30px rgba(122, 202, 205, 0.1);
   overflow: hidden;
 }
 
 .info-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(122, 202, 205, 0.2);
 }
 
@@ -4741,14 +4725,14 @@ Version: 1.0
 }
 
 .specialization-card {
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 
 .specialization-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .specialization-card .card {
@@ -4877,11 +4861,11 @@ Version: 1.0
   border: 1px solid #e9ecef;
   text-align: center;
   height: 100%;
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .step-card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .step-number {
@@ -4924,8 +4908,557 @@ Version: 1.0
   .step-card::after {
     display: block;
   }
-  
+
   .col-lg-3:last-child .step-card::after {
     display: none;
   }
+}
+
+/* Emergency Questions Section */
+.text-block {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.text-block .lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #424242;
+}
+
+.text-block .fas {
+  font-size: 1.5rem;
+}
+
+.question-block {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(122, 202, 205, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.question-block:hover {
+  box-shadow: 0 8px 25px rgba(122, 202, 205, 0.2);
+}
+
+.question-block:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #7acacd;
+}
+
+.question-block .h4 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.question-block .h5 {
+  color: #666;
+  font-weight: 400;
+}
+
+/* Medical Support Order Section */
+.medical-support-order {
+  background: #f8f9fa;
+}
+
+.medical-support-order .image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.medical-support-order .image-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.medical-support-order .image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.medical-support-order h2 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.medical-support-order .expert-info {
+  background: #fff;
+  border-left: 4px solid #7acacd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.medical-support-order .expert-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.medical-support-order .btn-primary {
+  background-color: #7acacd;
+  border-color: #7acacd;
+  padding: 0.8rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.medical-support-order .btn-primary:hover {
+  background-color: #68b8bb;
+  border-color: #68b8bb;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(122, 202, 205, 0.3);
+}
+
+/* Why Us Section Styles */
+.why-us {
+  background: #fff;
+}
+
+.why-us .section-title {
+  font-size: 2.5rem;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.why-us .section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #7acacd;
+  border-radius: 2px;
+}
+
+.why-us .section-subtitle {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 25px rgba(122, 202, 205, 0.15);
+}
+
+.feature-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: #7acacd;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card:hover:before {
+  opacity: 1;
+}
+
+.feature-card .icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background: rgba(122, 202, 205, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .icon-wrapper {
+  background: #7acacd;
+}
+
+.feature-card .icon-wrapper i {
+  font-size: 1.5rem;
+  color: #7acacd;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .icon-wrapper i {
+  color: #fff;
+}
+
+.feature-card .feature-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-card .feature-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgba(122, 202, 205, 0.1);
+}
+
+.feature-card:hover {
+  box-shadow: 0 15px 35px rgba(122, 202, 205, 0.2);
+  border-color: rgba(122, 202, 205, 0.3);
+}
+
+.feature-card .icon-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  background: rgba(122, 202, 205, 0.1);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.feature-card:hover .icon-wrapper {
+  background: rgba(122, 202, 205, 0.2);
+}
+
+.feature-card .icon-wrapper img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.feature-card .feature-title {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-title {
+  color: #7acacd;
+  transform: translateX(8px);
+}
+
+.feature-card .feature-text {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-text {
+  transform: translateX(8px);
+}
+
+.feature-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgba(122, 202, 205, 0.1);
+}
+
+.feature-card:hover {
+  box-shadow: 0 15px 35px rgba(122, 202, 205, 0.2);
+  border-color: rgba(122, 202, 205, 0.3);
+}
+
+.feature-card .icon-wrapper {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  background: rgba(122, 202, 205, 0.1);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.feature-card:hover .icon-wrapper {
+  background: rgba(122, 202, 205, 0.2);
+}
+
+.feature-card .icon-wrapper img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Cases Section Styles */
+.case-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  border: 1px solid rgba(122, 202, 205, 0.1);
+}
+
+.case-card:hover {
+  box-shadow: 0 15px 35px rgba(122, 202, 205, 0.2);
+  border-color: rgba(122, 202, 205, 0.3);
+}
+
+.case-image {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+
+.case-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-content {
+  padding: 1.5rem;
+}
+
+.case-tag {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: rgba(122, 202, 205, 0.1);
+  color: #7acacd;
+  border-radius: 30px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.case-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.case-text {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.case-details {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.case-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.case-detail i {
+  color: #7acacd;
+  font-size: 1rem;
+}
+
+/* Cases Section Styles */
+.case-item {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(122, 202, 205, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.case-item:hover {
+  box-shadow: 0 15px 35px rgba(122, 202, 205, 0.2);
+  border-color: #7acacd;
+}
+
+.case-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(122, 202, 205, 0.1);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.case-item-title {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.case-item-text {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.case-item-details {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.case-item-toggle-btn {
+  color: #7acacd;
+  text-decoration: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.case-item-toggle-btn:hover {
+  color: #68b8bb;
+}
+
+.case-item-toggle-btn i {
+  transition: transform 0.3s ease;
+}
+
+.case-item-toggle-btn[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+.case-item-toggle-content {
+  padding: 1rem 0;
+  color: #666;
+}
+
+/* Cases Section Styles */
+.cases-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.case-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.case-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.case-item h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.case-text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.case-toggle {
+  margin-top: auto;
+}
+
+.btn-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+  color: #7acacd;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-toggle:hover {
+  color: #68b8bb;
+}
+
+.btn-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.btn-toggle[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
+.case-toggle-content {
+  padding: 15px 0;
+  color: #666;
+}
+
+.case-item .box-header {
+  font-size: 25px;
+}
+
+.case-item .btn-toggle {
+  width: auto;
+
+}
+
+.case-item .btn-toggle i {
+  margin-left: 10px;
+
 }
