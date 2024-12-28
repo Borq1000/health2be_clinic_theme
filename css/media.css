@@ -1967,3 +1967,35 @@
         padding: 30px 0 !important;
     }
 }
+
+
+/* Скрытие кнопок навигации на мобильных устройствах */
+@media (max-width: 1024px) {
+    .hero-banner .slide-nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner .slide-nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-banner .slide-nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-banner .slide-nav {
+        display: none !important;
+    }
+}
+
+@media (orientation: portrait) {
+    .hero-banner .slide-nav {
+        display: none !important;
+    }
+}

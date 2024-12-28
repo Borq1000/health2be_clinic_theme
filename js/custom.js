@@ -26,55 +26,45 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Инициализация переключателей для feature-content
+    const featureContents = document.querySelectorAll('.feature-content');
+    
+    featureContents.forEach(content => {
+        content.addEventListener('click', function() {
+            // Закрываем все остальные активные блоки
+            featureContents.forEach(other => {
+                if (other !== content && other.classList.contains('active')) {
+                    other.classList.remove('active');
+                }
+            });
+            
+            // Переключаем текущий блок
+            this.classList.toggle('active');
+        });
+    });
+
     // Hero Banner Image Rotation
     function initHeroBanner() {
-        const slides = document.querySelectorAll('.hero-banner .slide');
-        const prevBtn = document.querySelector('.hero-banner .prev');
-        const nextBtn = document.querySelector('.hero-banner .next');
-        const heroTitle = document.querySelector('.hero-banner .hero-title');
-        const heroSubtitle = document.querySelector('.hero-banner .hero-subtitle');
-        
+        const slider = document.querySelector('.hero-banner');
+        if (!slider) return;
+
+        const slides = slider.querySelectorAll('.slide');
+        const prevBtn = slider.querySelector('.slide-nav.prev');
+        const nextBtn = slider.querySelector('.slide-nav.next');
+        const heroTitle = slider.querySelector('.hero-title');
+        const heroSubtitle = slider.querySelector('.hero-subtitle');
+
         if (!slides.length || !heroTitle || !heroSubtitle) return;
 
         let currentSlide = 0;
-        let nextSlide = 1;
-        let isAnimating = false;
+        let touchStartX = 0;
+        let touchEndX = 0;
 
-        // Показываем первый слайд
-        slides[currentSlide].style.opacity = '1';
-        slides[currentSlide].style.transform = 'scale(1.1)';
-        slides[currentSlide].style.transition = 'opacity 1.5s ease-in-out, transform 7s ease-in-out';
-
-        function updateContent(slideIndex) {
-            const slide = slides[slideIndex];
-            const title = slide.getAttribute('data-title');
-            const subtitle = slide.getAttribute('data-subtitle');
-
-            // Анимация исчезновения текста
-            heroTitle.style.opacity = '0';
-            heroSubtitle.style.opacity = '0';
-
-            setTimeout(() => {
-                heroTitle.textContent = title;
-                heroSubtitle.textContent = subtitle;
-
-                // Анимация появления текста
-                heroTitle.style.opacity = '1';
-                heroSubtitle.style.opacity = '1';
-            }, 750); // Половина времени перехода слайда
-        }
-
-        function changeSlide(direction = 'next') {
-            if (isAnimating) return;
-            isAnimating = true;
-
-            // Определяем следующий слайд
-            if (direction === 'next') {
-                nextSlide = (currentSlide + 1) % slides.length;
-            } else {
-                nextSlide = (currentSlide - 1 + slides.length) % slides.length;
-            }
-
+        // Функция обновления слайда
+        function updateSlide(nextSlide) {
+            // Сохраняем текущий слайд
+            const currentSlideElement = slides[currentSlide];
+            
             // Подготавливаем следующий слайд
             slides[nextSlide].style.opacity = '0';
             slides[nextSlide].style.transform = 'scale(1)';
@@ -85,50 +75,80 @@ document.addEventListener('DOMContentLoaded', function () {
                 slides[nextSlide].style.transition = 'opacity 1.5s ease-in-out, transform 7s ease-in-out';
                 slides[nextSlide].style.opacity = '1';
                 slides[nextSlide].style.transform = 'scale(1.1)';
-
-                // Скрываем текущий слайд
-                slides[currentSlide].style.opacity = '0';
-                slides[currentSlide].style.transform = 'scale(1)';
-
+                
                 // Обновляем текст
-                updateContent(nextSlide);
-
-                // Обновляем индекс текущего слайда
-                currentSlide = nextSlide;
-
-                // Разрешаем следующую анимацию через 1.5 секунды
-                setTimeout(() => {
-                    isAnimating = false;
-                }, 1500);
+                heroTitle.textContent = slides[nextSlide].dataset.title || '';
+                heroSubtitle.textContent = slides[nextSlide].dataset.subtitle || '';
+                
+                // Скрываем текущий слайд
+                currentSlideElement.style.opacity = '0';
             }, 50);
+            
+            currentSlide = nextSlide;
         }
 
-        // Добавляем стили для анимации текста
-        heroTitle.style.transition = 'opacity 0.75s ease-in-out';
-        heroSubtitle.style.transition = 'opacity 0.75s ease-in-out';
-
-        // Обработчики событий для кнопок
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => changeSlide('prev'));
-        }
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => changeSlide('next'));
+        // Функция следующего слайда
+        function nextSlide() {
+            const next = (currentSlide + 1) % slides.length;
+            updateSlide(next);
         }
 
-        // Автоматическая смена слайдов
-        let slideInterval = setInterval(() => changeSlide('next'), 7000);
-
-        // Останавливаем автоматическую смену при наведении на баннер
-        const heroBanner = document.querySelector('.hero-banner');
-        if (heroBanner) {
-            heroBanner.addEventListener('mouseenter', () => {
-                clearInterval(slideInterval);
-            });
-
-            heroBanner.addEventListener('mouseleave', () => {
-                slideInterval = setInterval(() => changeSlide('next'), 7000);
-            });
+        // Функция предыдущего слайда
+        function prevSlide() {
+            const prev = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlide(prev);
         }
+
+        // Обработчики для свайпов на мобильных
+        slider.addEventListener('touchstart', function(e) {
+            touchStartX = e.touches[0].clientX;
+        }, false);
+        
+        slider.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].clientX;
+            handleSwipe();
+        }, false);
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        }
+
+        // Обработчики кнопок
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', prevSlide);
+            nextBtn.addEventListener('click', nextSlide);
+        }
+
+        // Автоматическое переключение
+        let autoplayInterval = setInterval(nextSlide, 5000);
+
+        // Останавливаем автопереключение при взаимодействии
+        slider.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+        slider.addEventListener('touchstart', () => clearInterval(autoplayInterval));
+
+        // Возобновляем автопереключение после окончания взаимодействия
+        slider.addEventListener('mouseleave', () => {
+            autoplayInterval = setInterval(nextSlide, 5000);
+        });
+        slider.addEventListener('touchend', () => {
+            setTimeout(() => {
+                autoplayInterval = setInterval(nextSlide, 5000);
+            }, 1000);
+        });
+
+        // Инициализация первого слайда
+        slides[0].style.opacity = '1';
+        slides[0].style.transform = 'scale(1.1)';
+        slides[0].style.transition = 'transform 7s ease-in-out';
     }
 
     initHeroBanner();

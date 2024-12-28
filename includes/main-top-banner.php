@@ -27,8 +27,14 @@
                                         </svg>
                                     </div>
                                     <div class="feature-content">
-                                        <h3>Поддержка 24/7</h3>
-                                        <p>Всегда на связи</p>
+                                        <div class="feature-initial">
+                                            <h3>Поддержка 24/7</h3>
+                                            <p>Всегда на связи</p>
+                                        </div>
+                                        <div class="feature-expanded">
+                                            <p>Наша команда доступна круглосуточно для решения любых вопросов, связанных с вашим лечением и пребыванием в клинике.</p>
+                                        </div>
+                                        <i class="fas fa-chevron-down toggle-icon"></i>
                                     </div>
                                 </div>
                                 <div class="feature-item feature-global">
@@ -40,8 +46,14 @@
                                         </svg>
                                     </div>
                                     <div class="feature-content">
-                                        <h3>Международная экспертиза</h3>
-                                        <p>Лучшие специалисты</p>
+                                        <div class="feature-initial">
+                                            <h3>Международная экспертиза</h3>
+                                            <p>Лучшие специалисты</p>
+                                        </div>
+                                        <div class="feature-expanded">
+                                            <p>Сотрудничество с ведущими медицинскими центрами мира позволяет предоставлять лечение по международным протоколам.</p>
+                                        </div>
+                                        <i class="fas fa-chevron-down toggle-icon"></i>
                                     </div>
                                 </div>
                                 <div class="feature-item feature-doctor">
@@ -54,8 +66,14 @@
                                         </svg>
                                     </div>
                                     <div class="feature-content">
-                                        <h3>Личный врач-координатор</h3>
-                                        <p>Индивидуальный подход</p>
+                                        <div class="feature-initial">
+                                            <h3>Личный врач-координатор</h3>
+                                            <p>Индивидуальный подход</p>
+                                        </div>
+                                        <div class="feature-expanded">
+                                            <p>За каждым пациентом закрепляется персональный врач-координатор, который сопровождает на всех этапах лечения.</p>
+                                        </div>
+                                        <i class="fas fa-chevron-down toggle-icon"></i>
                                     </div>
                                 </div>
                             </div>
@@ -199,6 +217,28 @@
 .feature-doctor .feature-icon {
     background: rgba(231, 76, 60, 0.1);
     color: #e74c3c;
+}
+
+.feature-initial {
+    display: block;
+}
+
+.feature-expanded {
+    display: none;
+    margin-top: 10px;
+}
+
+.feature-content .toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.feature-content .toggle-icon:hover {
+    color: #333;
 }
 
 .hero-actions {

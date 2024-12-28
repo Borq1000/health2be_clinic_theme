@@ -3372,6 +3372,7 @@ textarea.form-control {
     position: relative;
     padding-left: 1.5rem;
     min-height: 120px;
+    text-align: left;
 }
 
 .review-text::before {
@@ -4007,6 +4008,7 @@ textarea.form-control {
     color: #7acacd;
 }
 
+
 /* Добавляем тултип для длинных email */
 .single-property-contact .list li {
     position: relative;
@@ -4024,4 +4026,51 @@ textarea.form-control {
 .prices-section .note-text {
     font-size: 18px;
     line-height: 1.5em;
+}
+
+/* Стили для переключаемых блоков */
+.feature-content {
+    position: relative;
+    padding-right: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feature-initial {
+    display: block;
+}
+
+.feature-expanded {
+    display: none;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.feature-content .toggle-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    color: #7acacd;
+    transition: transform 0.3s ease;
+}
+
+.feature-content.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.feature-content.active .feature-initial {
+    display: none;
+}
+
+.feature-content.active .feature-expanded {
+    display: block;
+}
+
+.feature-expanded p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
 }
