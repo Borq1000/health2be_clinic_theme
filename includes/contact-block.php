@@ -34,7 +34,7 @@
                                 Специалисты нашей службы поддержки ответят на возможные вопросы и будут рады Вам помочь.
                             </p>
                             
-                            <button class="callback-btn" data-bs-toggle="modal" data-bs-target="#callbackModal">
+                            <button class="callback-btn sg-popup-id-79" >
                                 <i class="fas fa-phone-alt"></i>
                                 <span>Заказать звонок</span>
                             </button>
@@ -43,7 +43,7 @@
                         <div class="contact-form-wrapper">
                             <h4 class="form-title">Обследование и лечение за рубежом</h4>
                             <div class="contact-form">
-                                <?php echo do_shortcode('[contact-form-7 id="5f17065" title="Обследование и лечение за рубежом - contact"]'); ?>
+                                <?php echo do_shortcode('[contact-form-7 id="5f17065" title="напишите нам home - contact"]'); ?>
                             </div>
                         </div>
                     </div>

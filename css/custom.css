@@ -669,7 +669,7 @@
     transform: translateY(-50%);
     width: 8px;
     height: 8px;
-    background: #3498db;
+    background: #7acacd;
     border-radius: 50%;
 }
 
@@ -689,9 +689,7 @@
     }
 }
 
-.sanatories-page {
-    padding: 2rem 1rem;
-}
+
 
 .sanatorium-item {
     margin-bottom: 2rem;
@@ -1024,7 +1022,7 @@
     }
 
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 22px;
     }
 
     .hero-content p {
@@ -1298,17 +1296,7 @@
     margin-bottom: 3rem;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, #7acacd 0%, rgba(122, 202, 205, 0.3) 100%);
-    border-radius: 3px;
-}
+
 
 /* Header Styles */
 .page-title {
@@ -1330,6 +1318,14 @@
     transition: box-shadow 0.3s ease;
     margin-bottom: 2rem;
     border: none;
+}
+
+.service-card a.btn-link {
+    color: #7acacd !important;
+}
+
+.service-card a.btn-link:hover {
+    color: #ffffff !important;
 }
 
 .service-card:hover {
@@ -1671,16 +1667,7 @@
     margin-bottom: 30px;
 }
 
-.section-title:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #7acacd;
-}
+
 
 .example-card {
     background: #fff;

@@ -24,7 +24,9 @@ get_header();  ?>
   <?php require_once 'includes/why-choose-us.php';  ?>       
       
             
-  <?php require_once 'includes/our-doctors-home.php';  ?>      
+  <?php require_once 'includes/short-reviews.php';  ?>   
+  
+  <?php require_once 'includes/our-doctors-home.php';  ?> 
 
  <?php require_once 'includes/our-advantages.php';  ?>   
     

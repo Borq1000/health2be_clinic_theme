@@ -1,0 +1,127 @@
+#clinic-prices-container {
+    padding: 10px;
+}
+
+.price-group {
+    background: #fff;
+    border: 2px solid #7acacd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.group-header {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.category-input {
+    flex: 1;
+}
+
+.remove-group,
+.remove-service {
+    background: #cc0000;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-group .dashicons,
+.remove-service .dashicons {
+    color: white;
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-group:hover,
+.remove-service:hover {
+    background: #990000;
+}
+
+.services-table {
+    margin-bottom: 15px !important;
+}
+
+.services-table th {
+    background: #f5f5f5;
+}
+
+.services-table td {
+    vertical-align: middle;
+}
+
+.services-table input[type="text"] {
+    width: 100%;
+}
+
+.services-table th:last-child,
+.services-table td:last-child {
+    width: 40px;
+    text-align: center;
+}
+
+.add-service {
+    margin-top: 10px;
+}
+
+.add-group-wrapper {
+    margin-top: 60px;
+    text-align: left;
+}
+
+/* Стили для кнопок */
+.button.add-group,
+.button.add-service {
+    background: #7acacd;
+    border-color: #7acacd;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.button.add-group:hover,
+.button.add-service:hover {
+    background: #6ab9bc;
+    border-color: #6ab9bc;
+    color: #fff;
+}
+
+/* Стили для фронтенда */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-table th,
+.price-table td {
+    padding: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.price-table .category-row {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.price-table .service-name {
+    color: #333;
+}
+
+.price-table .price {
+    font-weight: bold;
+    color: #7acacd;
+}

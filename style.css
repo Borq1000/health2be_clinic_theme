@@ -11,6 +11,9 @@ Version: 1.0
   margin-bottom: 3rem;
 }
 
+
+
+
 .section-header .title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -185,16 +188,7 @@ Version: 1.0
   display: inline-block;
 }
 
-.section-title:after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: #7acacd;
-}
+
 
 .advantage-card {
   background: #fff;
@@ -2165,7 +2159,7 @@ Version: 1.0
 
 /* Description Section */
 .single-clinic-desc {
-  padding: 40px 0;
+  padding: 15px 0;
 }
 
 .single-clinic-desc p {
@@ -2177,7 +2171,7 @@ Version: 1.0
 
 /* Prices Section */
 .prices-section {
-  padding: 80px 0;
+  padding: 0px 0px 20px 0px;
   background: #fff;
 }
 
@@ -2564,4 +2558,24 @@ Version: 1.0
 .letter-circle.special i {
   color: #7acacd;
   font-size: 16px;
+}
+
+.btn-form-contact,
+.contact-form input[type="submit"] {
+  border: 1px solid #7acacd !important;
+}
+
+.callback-btn {
+  width: 250px !important;
+}
+
+.callback-btn:hover {
+  background: none;
+  color: #7acacd;
+  border: 1px solid #7acacd;
+}
+
+.popup-form-title {
+  margin-bottom: 10px;
+  color: #555;
 }

@@ -69,11 +69,11 @@
                 <!-- Кнопки -->
                 <div class="col-md-4">
                     <div class="header-actions">
-                        <a href="" class="header-btn call-doctor">
+                        <a href="" class="header-btn call-doctor sg-popup-id-329">
                             <i class="fas fa-user-md"></i>
                             <span>Вызвать врача</span>
                         </a>
-                        <a href="" class="header-btn consultation">
+                        <a href="" class="header-btn consultation sg-popup-id-331">
                             <i class="fas fa-comments"></i>
                             <span>Консультация</span>
                         </a>

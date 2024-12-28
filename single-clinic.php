@@ -203,14 +203,17 @@ if (!empty($photos)) {
                                  </div>
                              </div>
                              </div>
+      
+   
+
+
                              
   <!-----------------Clinic Prices Section----------------------------------->   
-  
   <section class="prices-section" id="single-clinic-prices">
     <div class="container">
         <div class="section-title">
             <h2>Стоимость медицинских услуг</h2>
-            <p>Клиника  предлагает широкий спектр медицинских услуг высочайшего качества по конкурентоспособным ценам</p>
+            <p class="note-text">Клиника предлагает широкий спектр медицинских услуг высочайшего качества по конкурентоспособным ценам</p>
         </div>
 
         <div class="table-responsive">
@@ -223,62 +226,33 @@ if (!empty($photos)) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="category-row">
-                        <td colspan="3">Консультации специалистов</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">Первичная консультация терапевта</td>
-                        <td>60 мин</td>
-                        <td class="price">4 500 ₽</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">Повторная консультация терапевта</td>
-                        <td>30 мин</td>
-                        <td class="price">3 500 ₽</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">Консультация кардиолога</td>
-                        <td>60 мин</td>
-                        <td class="price">5 500 ₽</td>
-                    </tr>
-
-                    <tr class="category-row">
-                        <td colspan="3">Диагностика</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">УЗИ брюшной полости</td>
-                        <td>40 мин</td>
-                        <td class="price">3 800 ₽</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">ЭКГ с расшифровкой</td>
-                        <td>20 мин</td>
-                        <td class="price">2 500 ₽</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">МРТ головного мозга</td>
-                        <td>45 мин</td>
-                        <td class="price">8 500 ₽</td>
-                    </tr>
-
-                    <tr class="category-row">
-                        <td colspan="3">Лабораторные исследования</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">Общий анализ крови</td>
-                        <td>1 день</td>
-                        <td class="price">1 800 ₽</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">Биохимический анализ крови</td>
-                        <td>1-2 дня</td>
-                        <td class="price">2 900 ₽</td>
-                    </tr>
-                    <tr>
-                        <td class="service-name">Гормональный профиль</td>
-                        <td>2-3 дня</td>
-                        <td class="price">4 200 ₽</td>
-                    </tr>
+                    <?php
+                    $prices = get_post_meta(get_the_ID(), 'clinic_prices', true);
+                    if (!empty($prices)) {
+                        foreach ($prices as $group) {
+                            if (!empty($group['category'])) {
+                                ?>
+                                <tr class="category-row">
+                                    <td colspan="3"><?php echo esc_html($group['category']); ?></td>
+                                </tr>
+                                <?php
+                            }
+                            if (!empty($group['services'])) {
+                                foreach ($group['services'] as $service) {
+                                    if (!empty($service['name'])) {
+                                        ?>
+                                        <tr>
+                                            <td class="service-name"><?php echo esc_html($service['name']); ?></td>
+                                            <td><?php echo esc_html($service['duration']); ?></td>
+                                            <td class="price"><?php echo esc_html($service['price']); ?></td>
+                                        </tr>
+                                        <?php
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>
@@ -459,16 +433,17 @@ if (!empty($photos)) {
         
         <div class="row">
             <div class="single-clinic-living-block">
-                <h3 class="patient_rooms">Палаты</h3>
-                <p>Пациенты университетской клиники им. Гёте Франкфурт на Майне проживают в комфортабельных палатах, выполненных в современном дизайне и соответствующих высоким стандартам европейской медицины. Каждая палата оснащена отдельным санузлом с душем и туалетом. В обстановку стандартной палаты входят удобная автоматическая регулируемая кровать, пикроватная тумбочка, шкаф для хранения вещей, стол и стулья для приема посетителей, телевизор. По желанию пациентов можно подключиться к сети Интернет. В клинике также предусмотрены палаты повышенного комфорта.</p>
-                <h3 class="diet_and_menu">Питание и меню</h3>
-                <p>Пациент и сопровождающее его лицо ежедневно имеют выбор из трех меню. Если Вы по каким-то причинам употребляете в пищу не все продукты, Вам будет предложено индивидуальное меню. Пожалуйста, проинформируйте медперсонал о Ваших пищевых предпочтениях до начала лечения.</p>
-                <h3>Религиозные практики</h3>
-                <p>Услуги представителей религий могут быть предоставлены по запросу.</p>
-                <h3>Сопровождающее лицо</h3>
-                <p>Во время проведения стационарной программы сопровждающее лицо может проживать с Вами в палате или в отеле на выбор.</p>
-                <h3>Гостиница</h3>
-                <p>Во время проведения амбулаторной программы Вы можете жить в гостинице на Ваш выбор. Менеджеры помогут Вам выбрать самые подходящие варианты.</p>
+                <?php 
+                $living_content = get_post_meta(get_the_ID(), 'clinic_living', true);
+                if (!empty($living_content)) {
+                    echo wp_kses_post($living_content);
+                } else {
+                    // Дефолтный контент, если поле пустое
+                    ?>
+                    
+                    <?php
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -484,20 +459,39 @@ if (!empty($photos)) {
                      <h2 class="text-center mb-2">Расположение</h2>
                 </div>
                
-                <div class="location-content">
-                    <p>Франкфурт-на-Майне является пятым по величине городом Германии, а также одним из богатейших городов страны. Он расположен на реке Майн, что придает ему особую величественность и атмосферность. Франкфурт – город контрастов. Здес в абсолютной гармонии сосуществуют современные небоскребы и шпили средневековых соборов.</p>
-                    <p>На протяжении многих столетий Франкфурт сохраняет за собой репутацию финансового центра страны. Здесь располагается главные офисы крупнейших в мире банков, финансовых бирж и инвестиционных компаний. В городе ведет работу Европейский центральный Банк, определяющий денежно-кредитную политику в странах Еврозоны. Также город является крупнейшим транспортным, научным и культурным центром Германии. Здесь сосредоточено несколько наиболее престижных учебных заведений страны: Университет имени Гете, Школа финансов и управления, Университет прикладных наук и другие. Также в городе сконцентрировано огромное количество музеев, галерей, еаров.</p>
-                    <p>Франкфурт славится не только своими многочисленными финансовыми компаниями и поражающими воображение небоскребами, но и достопримечательностями, большинство из которых сохранились еще со времен Средневековья. Одним из самых примечательных зданий в городе считается франкфуртская Биржа, которая в настоящий момент является центром немецкого валютного рынка. Большое значение для истории и культуры не только Франкфурта, но и всей Германии, представляет имперский собор Кайзердом, где проходила коронация императоров и королей Германии. Памятник остался практически нетронутым во времена Второй мировой войны. В настоящий момент в соборе располагается знаменитый Алтарь Мария-Шлаф, созданный еще в XV веке. Впечатляет и 80-метровая башня, сооруженная в конце XV века. В примыкающей к собору готической часовне располагается музей, в котором представлены уникальные экспонаты, свидетельствующие о богатой истории собора.</p>
-                    <p>Франкфурт-на-Майне славится своими интереснейшими музеями. Одна из самых значимых коллекций всемирно известных скульптур находится в музее Либигхауз. Здесь собраны произведения искусства древней Греции, Египта, Рима, а также предметы культуры и быта времен европейского Ренессанса. Блестящим памятником архитектуры XIX века считается Старая Опера. Сегодня прекрасно сохранились внешний вид и холл здания, построенного в 1880 году. Из природных достопримечательностей стоит выделить франкфуртский зоопарк. Здесь на огромной территории содержится более 5000 особей животных.</p>
-                    <p>Кроме того, Франкфурт привлекает туристов со всего мира своими многочисленными и впечатляющими ярмарками и фестивалями. Например, это фестивали Набережной Музеев, Керамики, Небоскребов, Дни Леса, Музыкальный фестиваль и многочисленные ярмарки-выставки (автомобилестроения, музыкальные, книжные выставки и т.д.).</p>
+                <div class="clinic-description">
+                    <?php
+                    $location = get_post_meta(get_the_ID(), 'clinic_location', true);
+                    if (!empty($location)) {
+                        echo wp_kses_post($location);
+                    } else {
+                    ?>
+                    
+                    <?php } ?>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+
+                
                 <div class="map-container">
                     <div class="map-responsive">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c7a3c2e5c5a2e9b8c9b8c9b8c9b8c9b8c9b8c9b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                    <?php
+                    $map = get_post_meta(get_the_ID(), 'clinic_map', true);
+                    if (!empty($map)) {
+                        // Используем wp_kses вместо wp_kses_post для вывода iframe
+                        $allowed_html = array(
+                            'iframe' => array(
+                                'src'             => true,
+                                'width'           => true,
+                                'height'          => true,
+                                'frameborder'     => true,
+                                'style'           => true,
+                                'allowfullscreen' => true,
+                                'class'           => true,
+                                'id'             => true
+                            )
+                        );
+                        echo wp_kses($map, $allowed_html);
+                    }
+                    ?>
                     </div>
                 </div>
             </div>
@@ -585,35 +579,27 @@ if (!empty($photos)) {
          
                         </div>
                         <div class="col-xl-4 col-lg-5">
-                            <div class="single-sidebar fixed-sidebar">
+                            <div class="single-sidebar">
                                 <div class="widget-box single-property-contact">
                                     <h5 class="title fw-6">Контактная информация</h5>
                                     <div class="box-avatar">
-                                        
                                         <div class="info">
-                                            
                                             <ul class="list">
-                                                <li class="d-flex align-items-center gap-4 text-variant-1"><i class="icon icon-phone"></i><?php echo esc_html(get_post_meta(get_the_ID(), 'phone', true)); ?></li>
-                                                <li class="d-flex align-items-center gap-4 text-variant-1"><i class="icon icon-mail"></i><?php echo esc_html(get_post_meta(get_the_ID(), 'email', true)); ?></li>
+                                                <li class="d-flex align-items-center gap-4 text-variant-1"><i class="fas fa-phone text-primary"></i><?php echo esc_html(get_post_meta(get_the_ID(), 'phone', true)); ?></li>
+                                                <li class="d-flex align-items-center gap-4 text-variant-1">
+                                                    <i class="fas fa-envelope text-primary"></i>
+                                                    <span title="<?php echo esc_attr(get_post_meta(get_the_ID(), 'email', true)); ?>">
+                                                        <?php echo esc_html(get_post_meta(get_the_ID(), 'email', true)); ?>
+                                                    </span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                     
-                                    <h4 class="" style="margin-top: 10px;font-size: 19px; font-weight: bold;">Написать нам по поводу клиники</h4>
+                                    
                                     <div class="contact-form">
-                                        <h4>Записаться на приём</h4>
-                                        <form action="#" method="post">
-                                            <div class="ip-group">
-                                                <input type="text" name="name" placeholder="Ваше имя" required>
-                                            </div>
-                                            <div class="ip-group">
-                                                <input type="tel" name="phone" placeholder="Ваш телефон" required>
-                                            </div>
-                                            <div class="ip-group">
-                                                <textarea name="message" placeholder="Ваше сообщение"></textarea>
-                                            </div>
-                                            <button type="submit"><i class="fas fa-paper-plane"></i>Отправить</button>
-                                        </form>
+                                    
+                                        <?php echo do_shortcode('[contact-form-7 id="47ecbfb" title="Записаться на прием в клинику"]');  ?>
                                     </div>
                                 </div>
                             </div>

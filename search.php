@@ -1,20 +1,15 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
 <section class="page-subheader">
     <div class="container">
-        <h1 class="page-title">Статьи</h1>
-        <ul class="breadcrumbs-list">
-            <?php
-            if (function_exists('bcn_display')) {
-                bcn_display();
-            }
-            ?>
-        </ul>
+        <h1 class="page-title">Результаты поиска</h1>
+        <div class="search-results-header">
+            <p>Результаты поиска для: <span class="search-query">"<?php echo get_search_query(); ?>"</span></p>
+        </div>
     </div>
 </section>
 
-<section class="blog-posts py-5">
+<section class="search-results-section py-5">
     <div class="container">
         <div class="row g-4">
             <?php if (have_posts()) : ?>
@@ -70,10 +65,13 @@ get_header(); ?>
 
             <?php else : ?>
                 <div class="col-12">
-                    <div class="no-posts text-center py-5">
-                        <i class="fas fa-newspaper fa-3x mb-3 text-muted"></i>
-                        <h3>Записей не найдено</h3>
-                        <p>К сожалению, в данный момент записей нет.</p>
+                    <div class="search-no-results">
+                        <i class="fas fa-search fa-3x mb-3"></i>
+                        <h3>Ничего не найдено</h3>
+                        <p>К сожалению, по вашему запросу ничего не найдено. Попробуйте изменить параметры поиска.</p>
+                        <div class="search-form-wrapper">
+                            <?php get_search_form(); ?>
+                        </div>
                     </div>
                 </div>
             <?php endif; ?>

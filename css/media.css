@@ -391,19 +391,19 @@
         font-size: 1.8rem;
         margin-bottom: 2rem;
     }
-    
+
     .vc_toggle_title {
         padding: 1.2rem;
     }
-    
+
     .vc_toggle_title h4 {
         font-size: 1rem;
     }
-    
+
     .vc_toggle_content {
         padding: 0 1.2rem 1.2rem;
     }
-    
+
     .vc_toggle_content p {
         font-size: 0.95rem;
     }
@@ -414,23 +414,23 @@
         font-size: 1.6rem;
         margin-bottom: 1.8rem;
     }
-    
+
     .vc_toggle {
         margin-bottom: 0.8rem;
     }
-    
+
     .vc_toggle_title {
         padding: 1rem;
     }
-    
+
     .vc_toggle_title h4 {
         font-size: 0.95rem;
     }
-    
+
     .vc_toggle_content {
         padding: 0 1rem 1rem;
     }
-    
+
     .vc_toggle_content p {
         font-size: 0.9rem;
     }
@@ -665,15 +665,15 @@
     .checkup-definition {
         padding: 3rem 0;
     }
-    
+
     .checkup-definition .section-intro {
         margin-bottom: 2rem;
     }
-    
+
     .checkup-definition h2 {
         font-size: 1.75rem;
     }
-    
+
     .checkup-definition .lead {
         font-size: 1.1rem;
     }
@@ -684,15 +684,15 @@
     .checkup-info {
         padding: 3rem 0;
     }
-    
+
     .info-card {
         margin-bottom: 1rem;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .info-card h3 {
         font-size: 1.25rem;
     }
@@ -703,7 +703,7 @@
     .steps-wrapper {
         padding: 1rem 0;
     }
-    
+
     .step-card {
         margin-bottom: 2rem;
     }
@@ -713,21 +713,21 @@
     .exam-steps {
         padding: 3rem 0;
     }
-    
+
     .step-card {
         padding: 1.5rem;
     }
-    
+
     .step-number {
         width: 35px;
         height: 35px;
         font-size: 1.1rem;
     }
-    
+
     .step-icon i {
         font-size: 1.5rem;
     }
-    
+
     .step-text {
         font-size: 0.95rem;
         min-height: auto;
@@ -742,12 +742,12 @@
         padding: 0;
         margin: 2rem 0;
     }
-    
+
     .whatin-info {
         padding-left: 0;
         text-align: center;
     }
-    
+
     .service-item {
         font-size: 0.95rem;
     }
@@ -757,19 +757,19 @@
     .whatin-section {
         padding: 3rem 0;
     }
-    
+
     .whatin-image img {
         max-width: 140px;
     }
-    
+
     .service-item:hover {
         transform: none;
     }
-    
+
     .service-note {
         text-align: left;
     }
-    
+
     .whatin-info .btn {
         margin-top: 1.5rem;
     }
@@ -780,11 +780,11 @@
     .checkup-examples {
         padding: 40px 0;
     }
-    
+
     .example-card {
         padding: 20px;
     }
-    
+
     .example-title {
         font-size: 1.4rem;
     }
@@ -794,11 +794,11 @@
     .example-card {
         margin-bottom: 20px;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .example-image img {
         max-width: 100px;
     }
@@ -808,24 +808,24 @@
     .checkup-examples {
         padding: 30px 0;
     }
-    
+
     .section-title {
         font-size: 1.6rem;
     }
-    
+
     .example-title {
         font-size: 1.3rem;
     }
-    
+
     .list-title {
         font-size: 1.1rem;
     }
-    
+
     .patient-info li,
     .checkup-items li {
         font-size: 0.9rem;
     }
-    
+
     .example-card {
         padding: 15px;
     }
@@ -835,11 +835,11 @@
     .checkup-examples {
         padding: 20px 0;
     }
-    
+
     .section-title {
         font-size: 1.4rem;
     }
-    
+
     .example-image img {
         max-width: 80px;
     }
@@ -850,15 +850,15 @@
     .hero-section {
         min-height: 60vh;
     }
-    
+
     .hero-section::before {
-        background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
     }
-    
+
     .hero-section .hero-content {
         margin: 2rem 1rem;
     }
-    
+
     .hero-section .section-title {
         font-size: 2rem;
     }
@@ -868,15 +868,15 @@
     .hero-section {
         min-height: 50vh;
     }
-    
+
     .hero-section .section-title {
         font-size: 1.75rem;
     }
-    
+
     .hero-section .feature-list li {
         font-size: 1rem;
     }
-    
+
     .hero-section .btn-primary {
         width: 100%;
         padding: 0.75rem 1.5rem;
@@ -888,7 +888,7 @@
     .intro-content {
         padding: 1.5rem;
     }
-    
+
     .service-big {
         font-size: 1.15rem;
     }
@@ -899,11 +899,11 @@
         width: 60px;
         height: 60px;
     }
-    
+
     .intro-icon i {
         font-size: 1.5rem;
     }
-    
+
     .service-big {
         font-size: 1.1rem;
     }
@@ -914,11 +914,11 @@
     .info-card {
         margin-bottom: 2rem;
     }
-    
+
     .info-card:last-child {
         margin-bottom: 0;
     }
-    
+
     .info-title {
         font-size: 1.35rem;
     }
@@ -929,15 +929,15 @@
         width: 90px;
         height: 90px;
     }
-    
+
     .info-card-content {
         padding: 1.5rem;
     }
-    
+
     .info-title {
         font-size: 1.25rem;
     }
-    
+
     .info-text {
         font-size: 0.95rem;
     }
@@ -960,11 +960,11 @@
     .doctor-card {
         flex: 0 0 calc(50% - 20px);
     }
-    
+
     .doctor-image {
         height: 250px;
     }
-    
+
     .doctors-section .section-title {
         font-size: 24px;
     }
@@ -975,21 +975,21 @@
         flex: 0 0 calc(100% - 20px);
         position: relative;
     }
-    
+
     .doctor-image {
         height: 400px;
     }
-    
+
     .doctors-section .section-title {
         font-size: 22px;
         margin-bottom: 10px;
     }
-    
+
     .doctors-section .section-subtitle {
         font-size: 14px;
         margin-bottom: 25px;
     }
-    
+
     .carousel-prev,
     .carousel-next {
         width: 32px;
@@ -999,11 +999,11 @@
         background: rgba(122, 202, 205, 0.9);
         position: absolute;
     }
-    
+
     .carousel-prev {
         left: 5px;
     }
-    
+
     .carousel-next {
         right: 5px;
     }
@@ -1013,15 +1013,15 @@
     .doctor-image {
         height: 350px;
     }
-    
+
     .doctor-info h4 {
         font-size: 15px;
     }
-    
+
     .doctor-info h5 {
         font-size: 13px;
     }
-    
+
     .doctor-info p {
         font-size: 12px;
     }
@@ -1044,7 +1044,7 @@
     .specializations-section .section-title {
         font-size: 24px;
     }
-    
+
     .specialization-card {
         margin-bottom: 20px;
     }
@@ -1054,7 +1054,7 @@
     .specializations-section .section-title {
         font-size: 22px;
     }
-    
+
     .specialization-links a {
         padding: 6px 10px;
         font-size: 14px;
@@ -1065,16 +1065,16 @@
     .specializations-section {
         padding: 40px 0;
     }
-    
+
     .specializations-section .section-title {
         font-size: 20px;
         margin-bottom: 1.5rem;
     }
-    
+
     .specialization-card {
         margin-bottom: 15px;
     }
-    
+
     .specialization-links a {
         padding: 5px 8px;
     }
@@ -1085,7 +1085,7 @@
     .thank-section {
         padding: 80px 0;
     }
-    
+
     .thank-quote {
         font-size: 22px;
     }
@@ -1095,11 +1095,11 @@
     .thank-section {
         padding: 60px 0;
     }
-    
+
     .thank-content {
         padding: 30px;
     }
-    
+
     .thank-quote {
         font-size: 20px;
     }
@@ -1109,11 +1109,11 @@
     .thank-section {
         padding: 50px 0;
     }
-    
+
     .thank-content {
         padding: 20px;
     }
-    
+
     .thank-quote {
         font-size: 18px;
     }
@@ -1124,7 +1124,7 @@
     .message-wrapper {
         padding: 30px;
     }
-    
+
     .service-big {
         font-size: 22px;
     }
@@ -1134,7 +1134,7 @@
     .message-wrapper {
         padding: 25px;
     }
-    
+
     .service-big {
         font-size: 20px;
     }
@@ -1144,7 +1144,7 @@
     .message-wrapper {
         padding: 20px;
     }
-    
+
     .service-big {
         font-size: 18px;
     }
@@ -1156,14 +1156,14 @@
         padding: 25px 15px;
         margin-bottom: 20px;
     }
-    
+
     .step-number {
         width: 35px;
         height: 35px;
         font-size: 18px;
         margin-bottom: 15px;
     }
-    
+
     .step-content p {
         font-size: 15px;
     }
@@ -1173,13 +1173,13 @@
     .step-card {
         padding: 20px 15px;
     }
-    
+
     .step-number {
         width: 32px;
         height: 32px;
         font-size: 16px;
     }
-    
+
     .step-content p {
         font-size: 14px;
     }
@@ -1189,7 +1189,7 @@
     .steps-section {
         padding: 40px 0;
     }
-    
+
     .step-card {
         margin-bottom: 15px;
     }
@@ -1200,20 +1200,20 @@
     .text-block {
         padding: 1.5rem;
     }
-    
+
     .text-block .lead {
         font-size: 1.1rem;
         line-height: 1.6;
     }
-    
+
     .question-block {
         margin: 0 1rem;
     }
-    
+
     .question-block .h4 {
         font-size: 1.25rem;
     }
-    
+
     .question-block .h5 {
         font-size: 1.1rem;
     }
@@ -1223,19 +1223,19 @@
     .text-block {
         padding: 1rem;
     }
-    
+
     .text-block .lead {
         font-size: 1rem;
     }
-    
+
     .question-block {
         margin: 0 0.5rem;
     }
-    
+
     .question-block .h4 {
         font-size: 1.15rem;
     }
-    
+
     .question-block .h5 {
         font-size: 1rem;
     }
@@ -1247,11 +1247,11 @@
         font-size: 1.5rem;
         margin-top: 1rem;
     }
-    
+
     .medical-support-order .expert-info {
         padding: 1.25rem !important;
     }
-    
+
     .medical-support-order .expert-info p {
         font-size: 1rem;
     }
@@ -1261,11 +1261,11 @@
     .medical-support-order h2 {
         font-size: 1.35rem;
     }
-    
+
     .medical-support-order .image-wrapper {
         margin-bottom: 1.5rem;
     }
-    
+
     .medical-support-order .btn-primary {
         width: 100%;
         margin-top: 1rem;
@@ -1276,11 +1276,11 @@
     .medical-support-order h2 {
         font-size: 1.25rem;
     }
-    
+
     .medical-support-order .expert-info {
         padding: 1rem !important;
     }
-    
+
     .medical-support-order .expert-info i {
         font-size: 1.5rem !important;
     }
@@ -1291,20 +1291,20 @@
     .why-us .section-title {
         font-size: 2rem;
     }
-    
+
     .why-us .section-subtitle {
         font-size: 1rem;
     }
-    
+
     .feature-card {
         padding: 1.5rem;
     }
-    
+
     .feature-card .icon-wrapper {
         width: 50px;
         height: 50px;
     }
-    
+
     .feature-card .icon-wrapper i {
         font-size: 1.25rem;
     }
@@ -1314,15 +1314,15 @@
     .why-us .section-title {
         font-size: 1.75rem;
     }
-    
+
     .feature-card {
         margin-bottom: 1rem;
     }
-    
+
     .feature-card .feature-title {
         font-size: 1.1rem;
     }
-    
+
     .feature-card .feature-text {
         font-size: 0.95rem;
     }
@@ -1332,15 +1332,15 @@
     .why-us .section-title {
         font-size: 1.5rem;
     }
-    
+
     .why-us .section-title:after {
         width: 60px;
     }
-    
+
     .feature-card {
         padding: 1.25rem;
     }
-    
+
     .feature-card .icon-wrapper {
         width: 45px;
         height: 45px;
@@ -1395,15 +1395,15 @@
     .case-image {
         height: 200px;
     }
-    
+
     .case-content {
         padding: 1.25rem;
     }
-    
+
     .case-title {
         font-size: 1.1rem;
     }
-    
+
     .case-text {
         font-size: 0.9rem;
         margin-bottom: 1rem;
@@ -1414,7 +1414,7 @@
     .case-image {
         height: 180px;
     }
-    
+
     .case-details {
         flex-direction: column;
         gap: 0.75rem;
@@ -1587,11 +1587,11 @@
     .diagnosis-card {
         padding: 1.5rem !important;
     }
-    
+
     .diagnosis-letter {
         font-size: 1rem;
     }
-    
+
     .diagnosis-list li {
         font-size: 0.95rem;
     }
@@ -1601,7 +1601,7 @@
     .diagnoses-section {
         padding: 3rem 0 !important;
     }
-    
+
     .diagnosis-card {
         margin-bottom: 1rem;
     }
@@ -1611,15 +1611,15 @@
     .diagnosis-card {
         padding: 1.25rem !important;
     }
-    
+
     .diagnosis-letter {
         font-size: 0.95rem;
     }
-    
+
     .diagnosis-list li {
         font-size: 0.9rem;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
@@ -1629,12 +1629,341 @@
     .diagnoses-section {
         padding: 2rem 0 !important;
     }
-    
+
     .diagnosis-card {
         padding: 1rem !important;
     }
-    
+
     .section-title {
         font-size: 1.5rem;
+    }
+}
+
+/* Медиа-запросы для страницы врачей */
+@media (max-width: 991px) {
+    .departments-tabs .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .doctor-card {
+        margin-bottom: 1rem;
+    }
+
+    .doctor-modal .modal-dialog {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .departments-tabs .nav-pills {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        margin-bottom: -1rem;
+    }
+
+    .departments-tabs .nav-item {
+        flex: 0 0 auto;
+    }
+
+    .doctor-name {
+        font-size: 1.1rem;
+    }
+
+    .doctor-specialty {
+        font-size: 0.9rem;
+    }
+
+    .category-badge {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+/* Медиа-запросы для секции врачей */
+@media (max-width: 991px) {
+    .specialty-tabs .nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .doctor-info {
+        padding: 15px;
+    }
+
+    .doctor-name {
+        font-size: 20px;
+    }
+
+    .doctor-position {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .doctor-photo {
+        margin-bottom: 20px;
+    }
+
+    .doctor-info {
+        margin-top: 15px;
+    }
+
+    .category-badge {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .specialty-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .specialty-tabs::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .specialty-tabs::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .specialty-tabs::-webkit-scrollbar-thumb {
+        background: #7acacd;
+        border-radius: 2px;
+    }
+}
+
+/* Медиа-запросы для секции врачей */
+@media (max-width: 1200px) {
+    .doctor-name {
+        font-size: 16px;
+    }
+
+    .doctor-specialty {
+        font-size: 13px;
+    }
+
+    .specialty-filters .nav-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    .doctors-section {
+        padding: 40px 0;
+    }
+
+    .specialty-filters {
+        margin-bottom: 30px;
+    }
+
+    .specialty-filters .nav-pills {
+        gap: 8px;
+    }
+
+    .specialty-filters .nav-link {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .doctor-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .specialty-filters .nav-pills {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        margin-bottom: -15px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .specialty-filters .nav-link {
+        white-space: nowrap;
+    }
+
+    .specialty-filters::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .specialty-filters::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .specialty-filters::-webkit-scrollbar-thumb {
+        background: #7acacd;
+        border-radius: 2px;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-body {
+        padding: 0 20px 20px;
+    }
+
+    .modal-header {
+        padding: 15px 20px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .doctors-section {
+        padding: 30px 0;
+    }
+
+    .doctor-card {
+        margin-bottom: 15px;
+    }
+
+    .doctor-info {
+        padding: 15px;
+    }
+
+    .doctor-name {
+        font-size: 15px;
+    }
+
+    .doctor-specialty {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .btn-outline-primary {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+}
+
+/* Адаптивная навигация клиники */
+@media (max-width: 768px) {
+    .clinic-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    .clinic-nav .nav-link {
+        white-space: nowrap;
+        padding: 8px 15px;
+        margin: 0;
+        flex: 0 1 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .clinic-nav {
+        gap: 6px;
+        padding: 8px 0;
+    }
+
+    .clinic-nav .nav-link {
+        padding: 8px 12px;
+    }
+
+    .header-property-detail {
+        margin-bottom: 0px;
+    }
+
+    .single-clinic-header-block {
+        padding: 10px 0;
+
+    }
+}
+
+/* Добавление стилей для фиксированной кнопки консультации на мобильных устройствах */
+@media (max-width: 768px) {
+    .main-top-banner .btn-primary {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        width: calc(100% - 30px);
+        max-width: 300px;
+        padding: 12px 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-top-banner .btn-primary i {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-top-banner .btn-primary {
+        bottom: 15px;
+        padding: 10px 16px;
+        font-size: 14px;
+        width: calc(100% - 20px);
+    }
+
+    .main-top-banner .btn-primary i {
+        font-size: 14px;
+    }
+
+    .hero-banner .hero-content {
+
+        padding: 30px 0 !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-top-banner .btn-primary {
+        bottom: 10px;
+        padding: 8px 12px;
+        font-size: 13px;
+        width: calc(100% - 16px);
+    }
+
+    .main-top-banner .btn-primary i {
+        font-size: 13px;
+        margin-right: 6px;
+    }
+
+    .hero-banner .hero-content {
+
+        padding: 30px 0 !important;
+    }
+}
+
+@media (max-height: 667px) {
+    .main-top-banner .btn-primary {
+        bottom: 8px;
+    }
+
+    .hero-banner .hero-content {
+
+
+        padding: 40px 0;
+    }
+
+    .feature-item {
+        min-height: 70px;
+    }
+
+    .hero-banner .hero-content {
+
+        padding: 30px 0 !important;
     }
 }

@@ -6,7 +6,7 @@
                     <h2 class="h1 mb-4">Нужна помощь врача?</h2>
                     <p class="lead mb-4">24/7 для Вас доступен единый номер, по которому специалисты службы поддержки ответят на возможные вопросы и примут заявку</p>
                     <div class="d-flex flex-wrap gap-3">
-                        <button class="btn btn-primary btn-lg">
+                        <button class="btn btn-primary btn-lg sg-popup-id-329">
                             <i class="fas fa-user-md me-2"></i>
                             Вызвать врача
                         </button>
@@ -24,7 +24,7 @@
                              alt="Вызов врача" 
                              class="img-fluid rounded-circle">
                         <div class="call-back-button">
-                            <button class="btn btn-warning btn-lg popmake-5588 pum-trigger">
+                            <button class="btn btn-warning btn-lg popmake-5588 pum-trigger sg-popup-id-79">
                                 <i class="fas fa-headset me-2"></i>
                                 Заказать обратный звонок
                             </button>

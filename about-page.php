@@ -14,18 +14,7 @@ get_header();
 
 
 <main class="container py-5">
-    <!-- Заголовок и хлебные крошки -->
-    <div class="row mb-5">
-        <div class="col-12">
-            <h1 class="display-4 mb-3">О компании</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">О компании</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
+  
 
     <!-- О компании -->
     <div class="about-section mb-5">
@@ -139,11 +128,7 @@ get_header();
     <div class="row mb-5">
         <div class="col-12 text-center">
             <h2 class="title">Контакты и реквизиты</h2>
-            <div class="title-divider">
-                <div class="divider-line"></div>
-                <i class="fas fa-plus divider-icon" aria-hidden="true"></i>
-                <div class="divider-line"></div>
-            </div>
+            
         </div>
         <div class="col-md-6 mb-4 mb-md-0">
             <div class="contact-box rounded">
@@ -194,23 +179,15 @@ get_header();
     <!-- Опыт и особенности -->
     <div class="row mb-5">
         <div class="col-md-6 mb-4 mb-md-0">
-            <h2 class="title">Наш опыт</h2>
-            <div class="title-divider">
-                <div class="divider-line"></div>
-                <i class="fas fa-plus divider-icon" aria-hidden="true"></i>
-                <div class="divider-line"></div>
-            </div>
+            <h2 class="title text-center">Наш опыт</h2>
+            
             <div class="experience-box p-4 rounded">
                 <p class="lead mb-0">Врачей много, хороших надо поискать. Мы знаем как это делать. Мы работаем с лучшими и самыми лучшими специалистами!</p>
             </div>
         </div>
         <div class="col-md-6">
-            <h2 class="title">Почему нас выбирают?</h2>
-            <div class="title-divider">
-                <div class="divider-line"></div>
-                <i class="fas fa-plus divider-icon" aria-hidden="true"></i>
-                <div class="divider-line"></div>
-            </div>
+            <h2 class="title text-center">Почему нас выбирают?</h2>
+            
             <div class="why-us-box p-4 rounded">
                 <p class="lead mb-0">Мы предпочитаем количеству качество, обратившиеся к нам люди чувствуют это и рекомендуют другим...</p>
             </div>
@@ -219,7 +196,7 @@ get_header();
 
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="section-title text-center mb-4">Наши особенности в работе</h2>
+            <h2 class="text-center mb-4">Наши особенности в работе</h2>
             <div class="features-box p-4 rounded text-center">
                 <p class="lead mb-0">Мы не зарабатываем на анализах, мы не зарабатываем на назначениях препаратов, мы не занимаемся кросс продажами. Мы просто помогаем беречь Ваше здоровье, понимая что здоровье — это самое дорогое.</p>
             </div>
